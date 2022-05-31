@@ -30,7 +30,7 @@ body{
 }
 
 .button {
-    padding: 0.5em;
+    padding: 0.5rem;
     border: outset 3px var(--principal);
     background-color: var(--suave);
     border-radius: 4px;
@@ -38,7 +38,7 @@ body{
     text-shadow: var(--resaltadoNegro);
     color: var(--blanco);
     cursor: pointer;
-    margin: 0.5em;
+    margin: 0.5rem;
 }
 
 select {
@@ -77,7 +77,7 @@ p {
     font-size: 1.25rem ;
 }
 
-/* -----------GRID INDEX---------- */
+
 
 
 
@@ -87,7 +87,7 @@ p {
 
 .fondoAzul{
     background-color: var(--principal);
-    height: 4em;
+    height: 4rem;
 }
 
 .navMenu {
@@ -184,7 +184,6 @@ p {
 	color: var(--blanco);
 	background-color: var(--suave);
 	padding: 0.25em;
-    
     text-shadow: var(--resaltadoNegro);
 }
 
@@ -209,19 +208,15 @@ p {
 /* ----------SECCION DE DESTACADOS CONFIGURACIONES GLOBALES---------- */
 
 .gridContainer {
-    width: 100vw;
-    height: 100vh;
     display: grid;
     grid-template-columns: 100px 1fr 35%;
     grid-template-rows: 1fr 5fr 1fr;
-    
 }
 
 .gridContainerDer {
     display: grid;
     grid-template-columns: 35% auto 100px;
     grid-template-rows: 1fr 5fr 1fr;
-    
 }
 
 .destacadoContenido {
@@ -231,7 +226,6 @@ p {
     max-height: 80vh;
 }
 
-
 .cuadro {
     text-align: center;
     background-color: var(--fondo);
@@ -239,13 +233,10 @@ p {
     text-shadow: var(--resaltadoNegro);
 }
 
-
-
 .cuadro a img {
     width: 100%;
     height: 80%;
-    object-fit: cover;
-    
+    object-fit: cover; 
 }
 
 /* ----------SECCION DE NUTRICION DESTACADOS---------- */
@@ -259,7 +250,6 @@ p {
 
 .destacadoNutricion {
     grid-area: 2/2/ 3/3;
-    
 }
 
 /* ----------SECCION DE NUTRICION DESTACADOS---------- */
@@ -273,9 +263,7 @@ p {
 }
 
 .destacadoFitness {
-    grid-area: 2/2/ 3/3;
-    width: 100%;
-    height: 100%;
+    grid-area: 2/2/ 3/3;  
 }
 
 /* ----------SECCION DE MEGAMENTE DESTACADOS---------- */
@@ -288,9 +276,7 @@ p {
 }
 
 .destacadoEducamente {
-    grid-area: 2/2/ 3/3;
-    width: 100%;
-    height: 100%;
+    grid-area: 2/2/ 3/3;  
 }
 
 
@@ -298,14 +284,14 @@ p {
 /* ---------- FILTRADO DE PUBLICACIONES ---------- */
 
 .fondoFiltrado {
-    padding: 0.5em;  
+    margin: 0.5rem;  
 }
 
 .filtrado {
     background-image: url("../img/fondosYlogos/mejoresUltimos.png");
     border: solid 4px var(--principal);
     border-radius: 4px;
-    padding: 1em;
+    padding: 1rem;
 }
 
 .filtradoTitulo {
@@ -326,42 +312,41 @@ p {
 .publicaciones {
     border: solid 3px var(--principal);
     border-radius: 5px;
-    margin: 1em 0;
+    margin: 1rem 0.5rem;
     padding: 0.5em;
     background-color: var(--fondo);
 }
 
 .publicacionesTitulo {
-    padding: 0.5em;
+    padding: 0.5rem;
     text-align: center;
     text-decoration: underline;
     color: var(--blanco);
     text-shadow: var(--resaltadoNegro);
 }
 
-.publicacionesContenido {
-    
+.publicacionesContenido { 
     text-align: justify;   
 }
 
 .publicacionesContenido p {
-    margin: 1em;
+    margin: 1rem;
 }
 
 
 .publicacionesContenido h3 {
-    margin: 2em 1em 1em;
+    margin: 2rem 1rem 1rem;
 }
 
 .publicacionesImg {
     width: 60%;
     display: block;
-    margin: 1em auto 1em auto;
+    margin: 1rem auto 1rem auto;
 }
 
 .publicacionesVideo {
     display: block;
-    margin: 1em auto 1em auto
+    margin: 1rem auto 1rem auto
 }
 
 /* ---------- FORMULARIO DE CUENTA NUEVA ---------- */
@@ -381,7 +366,6 @@ fieldset {
 	justify-content: center;
     color: var(--blanco);
     text-shadow: var(--resaltadoNegro);
-    
 }
 
 fieldset input {
@@ -401,10 +385,8 @@ fieldset input {
 .nacionSexo {
 	display: inline-flex;
 	width: 500px;
-	
 	align-items: center;
 	justify-content: space-around;
-	
 }
 
 .nacionSexo input {
@@ -456,10 +438,80 @@ footer a:hover{
     color: var(--pastel);
 }
 
+/* --------------RESPONSIVE TAMAÑO TABLETA------------- */
+
 @media screen and (max-width:1023px) {
 
-body {
-    background-color: white;
-}
+    /* -----ESTILOS GLOBALES----- */   
     
+    
+    
+    h1 {font-size:2.8rem ;}
+
+    h2 {font-size: 2.16rem;}
+
+    h3 {font-size: 1.6rem;}
+
+    
+
+    .button {
+        padding: 0.4rem;
+        font-size: 1.2rem;
+    }
+    
+    /* ----NAVEGADOR----- */
+
+    .fondoAzul{
+        height: 3.2rem;
+    }
+
+    .navSecciones li:hover, .navInicioIcono:hover {
+        transform: none;   
+    }
+
+    /* -----TITULO----- */
+
+    .titulo {
+        height: 70vh;
+        
+    }
+
+    /* -----ULTIMAS DESTACADO----- */
+
+    .fondoUltimosDestacados {
+        display: none;
+    }
+
+    .gridContainer, .gridContainerDer{
+        grid-template-columns: 10% auto 10%;
+        align-items: center;
+    }
+
+    .destacadoContenido{
+        grid-template-rows: 1fr;
+    }
+
+    .fondoNutricion, .fondoFitness, .fondoEducamente{
+        height: 70vh;      
+    }
+
+    .cuadroDisplay {
+        display: none;
+    }
+
+    /* -----FILTRADO PUBLICACIONES----- */
+
+    .filtradoTitulo{
+        font-size: 1.6rem;
+    }
+
+    /* -----PUBLICACIONES----- */
+
+    .publicacionesImg {
+        height: 50vh;
+        width: auto;
+    }
+
+
+
 }
