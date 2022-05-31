@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://kit.fontawesome.com/40cb2b1903.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../estilos/main.css" type="text/css">
+		<title>Registrarse</title>
+	</head>
+	<body>
+		<header>
+			<nav class="fondoAzul">
+				<section class="container">
+					<a href="../index.html" class="nav__inicio--icono"><img src="../img/fondosYlogos/Logo ST (250 × 100 px) (200 × 50 px).gif" alt="logo salud total"></a> 											
+					<ul class="nav__secciones">
+						<li>
+							<a href="nutricion.html">Nutrición</a>
+						</li>
+						<li>
+							<a href="fitness.html">Fitness</a>
+						</li>
+						<li>
+							<a href="educamente.html">Educamente</a>
+						</li>
+						<li>
+							<a href="registrarse.html">Registrarse</a>
+						</li>
+				</section>
+			</nav>
+		</header>
+
+		<main>
+			<form class="container">
+				<fieldset>
+					<legend><h2>Registrarse</h2></legend>
+
+					<div class="form datosPersonales">
+						<input type="text" placeholder="Nombre Completo">					
+						<input type="text" placeholder="Apellido" >										
+						<input type="number" placeholder="Edad" >
+						<input type="email" placeholder="Ingrese su e-mail">
+					</div>
+
+					<div class="form nacionSexo">
+						<label>Pais</label>
+						<select name="nacion">
+							<option value="arg">Argentino</option>
+							<option value="ch">Chileno</option>
+							<option value="ur">Uruguayo</option>
+							<option value="par">Paraguayo</option>
+						</select>
+					
+						<p>Sexo:</p>
+						<label for="hombre">Hombre</label>
+						<input type="radio" name="sexo" value="H" id="hombre" checked>
+						<label for="mujer">Mujer</label>
+						<input type="radio" name="sexo" value="M" id="mujer">
+						<label for="indeterminado">Indeterminado</label>
+						<input type="radio" name="sexo" value="I" id="indeterminado">
+					</div>
+					
+					<div class="form datosUsuario">
+						<input type="text" placeholder="Escribe tu Usuario">					
+						<input type="password" placeholder="Crea una contraseña">
+					</div>
+					
+					<div class="form interes">
+	
+						<p>Elige un item de tu interes, puedes elegir más de uno:</p>
+						<label for="nutricion">Nutrición</label>
+						<input type="checkbox" id="nutricion" value="N">
+						<label for="fitness">Fitness</label>
+						<input type="checkbox" id="fitness" value="F">
+						<label for="educamente">Educamente</label>
+						<input type="checkbox" id="educamente" value="E">
+					</div>
+						
+					<textarea placeholder="Escribe un pequeño comentario de por que quieres unirte a nuestra comunidad"></textarea>
+					
+					<input class="form button" type="submit">
+					<input class="form button" type="reset">
+						
+				</fieldset>
+			</form>
+		</main>
+
+		<footer>
+			<div class="footerColumnas">   
+				<p>Secciones</p>
+				<ul>
+					<li>
+						<a href="../index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="nutricion.html">Nutrición</a>
+					</li>
+					<li>
+						<a href="fitness.html">Fitness</a>
+					</li>
+					<li>
+						<a href="educamente.html">Educamente</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footerColumnas">
+				<ul>
+					<li>
+						<a href="registrarse.html">Registrarse</a>
+					</li>
+					<li>
+						Ranking
+					</li>
+					<li>
+						Usuarios
+					</li>
+					<li>
+						Calendario de Publicaciones
+					</li>
+				</ul>
+			</div>
+			<div class="footerColumnas redes">
+				<p>Redes Sociales</p>
+				<i class="fa-brands fa-tiktok"></i>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-facebook-square"></i>
+				<i class="fa-brands fa-twitter"></i>
+			</div>
+			<div class="footerColumnas derechos">
+				<p>Página creada por Jorge A. Caballero
+					<br>&copy;Todos los derechos reservados
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>

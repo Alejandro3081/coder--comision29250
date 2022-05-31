@@ -1,0 +1,463 @@
+/* ---------- ESTILOS GLOBALES ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Squada One', cursive;
+}
+
+:root{
+    --principal: #004A8F; 
+    --suave: #026ccf;
+    --pastel: #96CCFF;
+    --blanco: #fbf5f3d7;
+    --fondo: #138DFF;
+    --resaltadoNegro: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
+    --resaltadoPrincipal:  -2px 0 var(--principal), 0 2px var(--principal),
+    2px 0 var(--principal), 0 -2px var(--principal);
+}
+body{
+    background-color: var(--suave);
+}
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+   
+}
+
+.button {
+    padding: 0.5em;
+    border: outset 3px var(--principal);
+    background-color: var(--suave);
+    border-radius: 4px;
+    font-size: 1.5rem;
+    text-shadow: var(--resaltadoNegro);
+    color: var(--blanco);
+    cursor: pointer;
+    margin: 0.5em;
+}
+
+select {
+    
+    border: solid 2px var(--principal);
+    border-radius: 5px;
+    background-color: var(--suave);
+    color: var(--blanco);
+    cursor: pointer;
+    font-size: 1.25rem;
+    text-align: center;
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+
+li {
+    list-style: none;
+    font-size: 1.25rem ;
+}
+
+h1 {
+    font-size:3.5rem ;
+}
+h2 {
+    font-size: 2.7rem;
+}
+h3 {
+    font-size: 2rem;
+}
+p {
+    font-size: 1.25rem ;
+}
+
+/* -----------GRID INDEX---------- */
+
+
+
+
+
+/* ---------- NAVEGADOR ---------- */
+
+.fondoAzul{
+    background-color: var(--principal);
+    height: 4em;
+}
+
+nav section {
+    align-items: center;
+    display: flex; 
+    color: var(--blanco);
+    height: 100%;
+}
+
+
+nav section li{
+    display: inline;
+}
+
+.nav__inicio--icono {
+   width: 15%;
+   object-fit: contain;
+}
+
+.nav__inicio--icono:hover{
+    transform: scale(1.2);
+}
+
+nav section a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav__secciones {
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+
+
+.nav__secciones li a:visited {
+    color: var(--blanco)
+}
+
+.nav__secciones li:hover {
+    transform: scale(1.2);   
+}
+
+/* ---------- TITULO PAGINA INICIO ---------- */
+
+.titulo {
+    text-align: center;
+    color: var(--blanco);
+    justify-content: center;
+    padding: auto;   
+    background-color: var(--principal);
+    background-image: url("../img/fondosYlogos/titulo.png");
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow:var(--resaltadoPrincipal);
+}
+
+
+
+
+/* ---------- CONTENIDO DEL INICIO ---------- */
+
+/* ---------- SECCION ULTIMAS PUBLICACIONES Y DESTACADOS ---------- */
+
+.fondoUltimosDestacados {
+    background-image: url("../img/fondosYlogos/mejoresUltimos.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.seccionUltimosDestacados {
+    display: flex;  
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+}
+
+.barra{
+	max-height: 80vh;
+	margin: 3em;
+	border: solid 4px var(--principal);
+	border-radius: 10px;
+    background-color: var(--fondo);
+}
+
+.subtitulo {
+	text-align: center;
+	color: var(--blanco);
+	background-color: var(--suave);
+	padding: 0.25em;
+    
+    text-shadow: var(--resaltadoNegro);
+}
+
+.barra ul li{
+	border-bottom: solid 2px var(--suave);
+	padding: .25em;
+    text-shadow: var(--resaltadoNegro);
+}
+
+.barra a:visited {
+    color: var(--blanco);
+}
+
+.barra a:hover {
+    color: var(--suave);
+}
+
+.estrellas {
+	color: var(--suave);
+}
+
+/* ----------SECCION DE DESTACADOS CONFIGURACIONES GLOBALES---------- */
+
+.gridContainer {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100px 1fr 35%;
+    grid-template-rows: 1fr 5fr 1fr;
+    
+}
+
+.gridContainerDer {
+    display: grid;
+    grid-template-columns: 35% auto 100px;
+    grid-template-rows: 1fr 5fr 1fr;
+    
+}
+
+.destacadoContenido {
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    max-height: 80vh;
+}
+
+
+.cuadro {
+    text-align: center;
+    background-color: var(--fondo);
+    border: solid 2px var(--principal);
+    text-shadow: var(--resaltadoNegro);
+}
+
+
+
+.cuadro a img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    
+}
+
+/* ----------SECCION DE NUTRICION DESTACADOS---------- */
+
+.fondoNutricion {
+    background-image: url("../img/fondosYlogos/nutricionDestacados.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: right top;
+}
+
+.destacadoNutricion {
+    grid-area: 2/2/ 3/3;
+    
+}
+
+/* ----------SECCION DE NUTRICION DESTACADOS---------- */
+
+
+.fondoFitness {
+    background-image: url("../img/fondosYlogos/fitnessDestacados.png");
+    height: 100vh;
+    background-size: cover;
+    
+}
+
+.destacadoFitness {
+    grid-area: 2/2/ 3/3;
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------SECCION DE MEGAMENTE DESTACADOS---------- */
+
+.fondoEducamente {
+    background-image: url("../img/fondosYlogos/educamenteDestacados.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: right top;
+}
+
+.destacadoEducamente {
+    grid-area: 2/2/ 3/3;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* ---------- FILTRADO DE PUBLICACIONES ---------- */
+
+.fondoFiltrado {
+    padding: 0.5em;  
+}
+
+.filtrado {
+    background-image: url("../img/fondosYlogos/mejoresUltimos.png");
+    border: solid 4px var(--principal);
+    border-radius: 4px;
+    padding: 1em;
+}
+
+.filtradoTitulo {
+    text-align: center;
+    color: var(--blanco);
+    font-size: 2rem;
+    text-shadow: var(--resaltadoPrincipal);
+    text-transform: uppercase;
+}
+
+.filtrado label{
+    font-size: 1.25rem;
+    color: var(--blanco);
+}
+/* ---------- SECCIONES DE PUBLICACIONES DESTACADAS ---------- */
+
+
+.publicaciones {
+    border: solid 3px var(--principal);
+    border-radius: 5px;
+    margin: 1em 0;
+    padding: 0.5em;
+    background-color: var(--fondo);
+}
+
+.publicacionesTitulo {
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: underline;
+    color: var(--blanco);
+    text-shadow: var(--resaltadoNegro);
+}
+
+.publicacionesContenido {
+    
+    text-align: justify;   
+}
+
+.publicacionesContenido p {
+    margin: 1em;
+}
+
+
+.publicacionesContenido h3 {
+    margin: 2em 1em 1em;
+}
+
+.publicacionesImg {
+    width: 60%;
+    display: block;
+    margin: 1em auto 1em auto;
+}
+
+.publicacionesVideo {
+    display: block;
+    margin: 1em auto 1em auto
+}
+
+/* ---------- FORMULARIO DE CUENTA NUEVA ---------- */
+
+.form {
+	margin: 0.5em auto;
+}
+
+fieldset {
+    border:solid 4px var(--principal);
+    background-color: var(--fondo);
+    text-align: center;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+	justify-content: center;
+    color: var(--blanco);
+    text-shadow: var(--resaltadoNegro);
+    
+}
+
+fieldset input {
+    border: none;
+    border-bottom: solid 3px var(--principal);
+	margin: 0.25em auto;
+	padding: 0.25em;
+	font-weight: bold;
+	font-size: 1rem;
+	width: 500px;
+}
+
+[type="radio"] ,[type="checkbox"] {
+	width: auto;
+}
+
+.nacionSexo {
+	display: inline-flex;
+	width: 500px;
+	
+	align-items: center;
+	justify-content: space-around;
+	
+}
+
+.nacionSexo input {
+	margin: 0;
+}
+
+.interes p {
+	margin-bottom: 0.5em;
+}
+
+textarea{
+	width: 500px;
+	height: 200px;
+	margin: 0.25em auto;
+	font: 16px bolder;
+    resize: none;
+    font-family: 'Squada One', cursive;
+}
+
+.form--button {
+    width: 200px;
+    margin:0.25em auto;
+    
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    display: flex;
+    padding: 0.5em;
+	justify-content: space-evenly;
+    background-color: var(--principal);
+    color: var(--blanco);
+}
+
+.footerColumnas i {
+	font-size: 2rem;
+	color: var(--blanco);
+}
+
+.redes {
+    text-align: center;
+}
+
+.derechos {
+	text-align: center;
+    margin: auto 0;
+}
+
+footer a:visited {
+    color: var(--blanco);
+}
+footer a:hover{
+    color: var(--pastel);
+}

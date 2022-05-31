@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://kit.fontawesome.com/40cb2b1903.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../estilos/main.css" type="text/css">
+		<title>Educamente</title>
+	</head>
+	<body>
+
+		<!-- -----------HEADER----------- -->
+
+		<header>
+			<nav class="fondoAzul">
+				<section class="container">
+					<a href="../index.html" class="nav__inicio--icono"><img src="../img/fondosYlogos/Logo ST (250 × 100 px) (200 × 50 px).gif" alt="logo salud total"></a> 											
+					<ul class="nav__secciones">
+						<li>
+							<a href="nutricion.html">Nutrición</a>
+						</li>
+						<li>
+							<a href="fitness.html">Fitness</a>
+						</li>
+						<li>
+							<a href="educamente.html">Educamente</a>
+						</li>
+						<li>
+							<a href="registrarse.html">Registrarse</a>
+						</li>
+				</section>
+			</nav>
+		</header>
+
+		<main>
+			
+			<!-- -----------FILTRADO DE PUBLICACIONES---------- -->
+
+			<section class="fondoFiltrado">
+				<form class="filtrado container">
+					<H2 class="filtradoTitulo">Educamente - Publicaciones Destacadas</H2>
+					<button class="button">Mas recientes</button>
+					<button class="button">Mas populares</button>
+								
+					<label for="antiguedad">Desde:</label>
+					<select name="fecha" id="antiguedad">
+						<option value="h">Hoy</option>
+						<option value="a">Ayer</option>
+						<option value="us">Ultima Semana</option>
+						<option value="um">Ultimo Mes</option>
+						<option value="ua">Ultimo año</option>
+						<option value="s">Siempre</option>
+					</select>
+					<label for="orden">Ordenado por:</label>
+					<select name="mejores" id="orden">
+						<option value="f">Fecha</option>
+						<option value="p">Puntaje</option>
+						<option value="v">Vistas</option>
+					</select>					
+				</form>
+			</section>
+				
+			<!-- ----------TABLA DE PUBLICACIONES---------- -->
+
+			<div class="tablaDePublicaciones container">
+
+				<div class="publicaciones" id="publicacion-1educamente">
+					<h2 class="publicacionesTitulo">3 Ejercicios Para Entrenar tu Mente - <i>Por Juego Mental</i></h2>
+					<div class="publicacionesContenido">
+						<h3>1 - Leer, leer y leer</h3>
+						<p>
+						Ya sea una novela romántica, una historia de ficción, una obra histórica… Pocas actividades estimulan más el cerebro que una buena sesión de lectura. ¿Las razones? Esta práctica aumenta la concentración, reduce el estrés, mejora la reserva cognitiva y fortalece las conexiones neuronales.
+						</p>
+						<img class="publicacionesImg" src="../img/leer.jpg" alt="joven leyendo">
+						<h3>2 - Tarde de Videojuegos</h3>
+						<p>
+						¿Tu hijo te ha pedido una y mil veces que juegues God of war o Fifa con él? ¡Acepta el reto! Según los expertos este tipo de actividades requiere control motor y visual, memoria, toma de decisiones y atención.
+						</p>
+						<img class="publicacionesImg" src="../img/gamer.jpg" alt="jugador contento">
+						<h3>3 - Pon a prueva tu memoria</h3>
+						<p>
+						Incluye en tu rutina diaria alguna (as) para fortalecer la memoria. ¿Cómo cuáles? Aprende nuevas palabras de inglés para perfeccionar el idioma, llena crucigramas, juega sudoku o realiza algunos acertijos.
+						</p>
+						<img class="publicacionesImg" src="../img/sudoku-rellenado.jpg" alt="sudoku completo">               
+					</div>
+				</div>
+
+				<div class="publicaciones" id="publicacion-2educamente"> 
+					<h2 class="publicacionesTitulo">4 Ejercicios Sencillos Para Evaluar la Velocidad de tu Cerebro - <i>Por UsuarioMental</i></h2>
+					<div class="publicacionesContenido">
+						<P>
+							El ejercicio regular te ayuda a mantenerte en buena forma y a frenar los cambios asociados con la vejez. Este hecho se aplica a todos los órganos de tu cuerpo, incluyendo tu cerebro.
+							Es por eso que hoy vamos a contarte cuatro ejercicios simples que pueden ayudarte a preservar tu memoria. ¡Además, es una buena oportunidad para comprobar que tan ágil es tu cerebro!
+						</P>
+					</div>
+					<iframe class="publicacionesVideo" width="560" height="315" src="https://www.youtube.com/embed/YXEr_pqxPVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+
+				<div class="publicaciones" id="publicacion-3educamente">
+					<h2 class="publicacionesTitulo">Ejercicios de estimulación cognitiva para personas mayores - <i>Por Prono</i></h2>
+					<div class="publicacionesContenido">
+						<img src="../img/ejerciciosParaMayores.jpg" alt="abuelos jugando ajedrez" class="publicacionesImg">
+						<h3>Ejercicios de estimulación cognitiva leve </h3>
+						<p><u>Memoria y fluidez verbal</u></p>
+						<p>Palabras encadenadas</p>
+						<p>Continúe la lista de palabras encadenadas. Cada palabra tiene que comenzar con la última sílaba de la palabra anterior: Casa - Salero - Roca - Caja - ……………………………………… </p>
+
+						<p><u>Control atencional </u></p>
+						<p>Cálculo</p>
+						<p>Continúe las siguientes secuencias de números:  </p>
+						<p>579, 570, 561, 552,………………………………………………………………………., 498</p>
+						<p>2, 15, 28, 41,………………………………………………………………………………. , 119</p>
+						<p>43, 47, 51, 55,………………………………………………………………………..…….., 79</p>
+						<p>300, 297, 294, 291,………………………………………………………………………. ,273</p>
+
+						<p><u>Memoria episódica</u></p>
+						<p>Cuente las actividades que realizó durante el día de ayer: (Ejemplo: Me levanté de la cama, fui al baño, me aseé, me arreglé, salí a comprar al supermercado azúcar y huevos, luego llamé a mi hermana y le conté…).</p>
+
+						<p><u>Memoria y Escritura</u></p>
+						<p>Escriba sobre algún viaje que haya realizado en su vida.</p>
+					</div>
+				</div>
+
+				<div class="publicaciones" id="publicacion-4educamente">
+					<h2 class="publicacionesTitulo">7 Ejercicios de GIMNASIA CEREBRAL para ACTIVAR tus NEURONAS - <i>Por Pablo Lomeli</i></h2>
+					<div class="publicacionesContenido">
+						<p> ¿Quieres Ejercitar tu Cerebro? HOY Veremos 7 Ejercicios INTENSOS de Gimnasia Cerebral.</p>
+						<iframe class="publicacionesVideo" width="560" height="315" src="https://www.youtube.com/embed/czaJdREapTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="publicaciones" id="publicacion-5educamente">
+					<h2 class="publicacionesTitulo">11 ejercicios para mejorar tu memoria en un 80 % - <i>Por Genial</i></h2>
+					<div class="publicacionesContenido">
+						<p>Hoy en día, muchas personas están obsesionadas con tener un estilo de vida saludable. Comen cosas sanas, entrenan en el gimnasio y todo eso. Pero tienden a olvidar que nuestro cerebro también necesita ejercitarse, sobre todo si de pronto tienes más y más lapsus mentales.</p>
+						<p>Sí, aprendemos cosas a lo largo de nuestras vidas, pero aún no lo sabemos todo porque olvidamos mucha información. ¡Así que, si todos te dicen que tienes la memoria de un pez dorado, ¡no te preocupes! Simplemente haz estos ejercicios cerebrales, te ayudarán mucho.</p>
+						<iframe class="publicacionesVideo" width="560" height="315" src="https://www.youtube.com/embed/woo2-82x87E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="publicaciones" id="publicacion-6educamente">
+					<h2 class="publicacionesTitulo">Cómo AUMENTAR tu CONCENTRACIÓN - <i>Por Dr. De La Rosa</i></h2>
+					<div class="publicacionesContenido">
+						<p>La concentración y la capacidad de atención son habilidades que estamos perdiendo año tras año. Por un lado porque no las entrenamos y por otro porque mucho del mundo moderno atenta y compite contra nuestra atención.</p>
+						<p>En este video vamos a ver algunos de los consejos más útiles para recuperar y mejorar nuestra capacidad de atención y concentración.</p>
+						<iframe class="publicacionesVideo" width="560" height="315" src="https://www.youtube.com/embed/EmHIoI-ceoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+
+
+			</div>
+
+		</main>
+
+		<!-- ----------FOOTER---------- -->
+
+		<footer>
+				<div class="footerColumnas">   
+					<p>Secciones</p>
+					<ul>
+						<li>
+							<a href="../index.html">Inicio</a>
+						</li>
+						<li>
+							<a href="nutricion.html">Nutrición</a>
+						</li>
+						<li>
+							<a href="fitness.html">Fitness</a>
+						</li>
+						<li>
+							<a href="educamente.html">Educamente</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footerColumnas">
+					<ul>
+						<li>
+							<a href="registrarse.html">Registrarse</a>
+						</li>
+						<li>
+							Ranking
+						</li>
+						<li>
+							Usuarios
+						</li>
+						<li>
+							Calendario de Publicaciones
+						</li>
+					</ul>
+				</div>
+				<div class="footerColumnas redes">
+					<p>Redes Sociales</p>
+					<i class="fa-brands fa-tiktok"></i>
+					<i class="fa-brands fa-instagram"></i>
+					<i class="fa-brands fa-facebook-square"></i>
+					<i class="fa-brands fa-twitter"></i>
+				</div>
+				<div class="footerColumnas derechos">
+					<p>Página creada por Jorge A. Caballero
+						<br>&copy;Todos los derechos reservados
+					</p>
+				</div>
+		</footer>
+
+	</body>
+</html>
