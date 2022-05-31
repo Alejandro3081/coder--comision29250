@@ -90,7 +90,7 @@ p {
     height: 4em;
 }
 
-nav section {
+.navMenu {
     align-items: center;
     display: flex; 
     color: var(--blanco);
@@ -98,26 +98,26 @@ nav section {
 }
 
 
-nav section li{
+.navMenu li{
     display: inline;
 }
 
-.nav__inicio--icono {
+.navInicioIcono {
    width: 15%;
    object-fit: contain;
 }
 
-.nav__inicio--icono:hover{
+.navInicioIcono:hover{
     transform: scale(1.2);
 }
 
-nav section a img {
+.navMenu a img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.nav__secciones {
+.navSecciones {
     width: 85%;
     display: flex;
     justify-content: space-evenly;  
@@ -125,11 +125,11 @@ nav section a img {
 
 
 
-.nav__secciones li a:visited {
+.navSecciones li a:visited {
     color: var(--blanco)
 }
 
-.nav__secciones li:hover {
+.navSecciones li:hover {
     transform: scale(1.2);   
 }
 
@@ -424,12 +424,6 @@ textarea{
     font-family: 'Squada One', cursive;
 }
 
-.form--button {
-    width: 200px;
-    margin:0.25em auto;
-    
-}
-
 
 /* ---------- FOOTER ---------- */
 
@@ -460,4 +454,12 @@ footer a:visited {
 }
 footer a:hover{
     color: var(--pastel);
+}
+
+@media screen and (max-width:1023px) {
+
+body {
+    background-color: white;
+}
+    
 }
