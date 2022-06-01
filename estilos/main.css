@@ -207,6 +207,10 @@ p {
 
 /* ----------SECCION DE DESTACADOS CONFIGURACIONES GLOBALES---------- */
 
+.enlaceResponsive {
+    display: none;
+}
+
 .gridContainer {
     display: grid;
     grid-template-columns: 100px 1fr 35%;
@@ -325,9 +329,7 @@ p {
     text-shadow: var(--resaltadoNegro);
 }
 
-.publicacionesContenido { 
-    text-align: justify;   
-}
+
 
 .publicacionesContenido p {
     margin: 1rem;
@@ -346,7 +348,9 @@ p {
 
 .publicacionesVideo {
     display: block;
-    margin: 1rem auto 1rem auto
+    margin: 1rem auto 1rem auto;
+    width: 560px;
+    height: 315px;;
 }
 
 /* ---------- FORMULARIO DE CUENTA NUEVA ---------- */
@@ -362,7 +366,7 @@ fieldset {
     margin: 1em auto;
     display: flex;
     flex-direction: column;
-    width: 800px;
+    max-width: 800px;
 	justify-content: center;
     color: var(--blanco);
     text-shadow: var(--resaltadoNegro);
@@ -440,7 +444,7 @@ footer a:hover{
 
 /* --------------RESPONSIVE TAMAÑO TABLETA------------- */
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width: 768px) {
 
     /* -----ESTILOS GLOBALES----- */   
     
@@ -509,9 +513,61 @@ footer a:hover{
 
     .publicacionesImg {
         height: 50vh;
-        width: auto;
+        object-fit: contain;
     }
 
+    /* -----FORMULARIO----- */
 
 
+}
+
+/* ---------- RESPONSIVE TAMAÑO CELULAR ---------- */
+
+@media screen and (max-width: 576px) {
+
+    body{
+        background-color: var(--fondo);
+    }
+
+    /* -----ULTIMAS DESTACADO----- */
+
+    .enlaceResponsive{
+        display: inline;
+        padding: 0.1rem;
+        border: solid 2px var(--principal);
+        background-color: var(--pastel);
+        border-radius: 4px;
+        color: var(--suave);
+        text-shadow: var(--resaltadoNegro);
+    }
+
+    .gridContainer, .gridContainerDer{
+        display: block;
+        margin: 1rem;
+    }
+
+   .destacadoContenido{
+       max-height: 95%;
+       grid-template-columns: 1fr;
+   }
+
+   .fondoNutricion, .fondoFitness, .fondoEducamente{
+       height: 100%;
+    }
+   
+    .cuadro a img{
+        height: auto;
+    }
+
+    .cuadro a p{
+        padding: 0.5rem;
+    }
+
+    /* -----PUBLICACIONES----- */
+
+    .publicacionesVideo{
+        display: flex;
+        width: 90%;
+        height: auto;
+    }
 }
