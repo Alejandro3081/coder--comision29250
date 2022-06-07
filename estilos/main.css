@@ -425,9 +425,13 @@ textarea{
 footer {
     display: flex;
     padding: 0.5em;
-	justify-content: space-evenly;
+	justify-content: space-around;
     background-color: #004A8F;
     color: #fbf5f3d7;
+}
+
+.footerColumnas{
+    margin: 0.5rem;
 }
 
 .footerColumnas i {
@@ -598,7 +602,7 @@ footer a:hover{
 
     .footerSectionsMovile, .redesMovile {
         display: flex;  
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .footerMovile p {
