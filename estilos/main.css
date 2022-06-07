@@ -9,19 +9,8 @@
     font-family: 'Squada One', cursive;
 }
 
-:root{
-    --principal: #004A8F; 
-    --suave: #026ccf;
-    --pastel: #96CCFF;
-    --blanco: #fbf5f3d7;
-    --fondo: #138DFF;
-    --resaltadoNegro: -1px 0 black, 0 1px black,
-    1px 0 black, 0 -1px black;
-    --resaltadoPrincipal:  -2px 0 var(--principal), 0 2px var(--principal),
-    2px 0 var(--principal), 0 -2px var(--principal);
-}
 body{
-    background-color: var(--suave);
+    background-color: #026ccf;
 }
 .container {
     margin: 0 auto;
@@ -31,22 +20,23 @@ body{
 
 .button {
     padding: 0.5rem;
-    border: outset 3px var(--principal);
-    background-color: var(--suave);
+    border: outset 3px #004A8F;
+    background-color: #026ccf;
     border-radius: 4px;
     font-size: 1.5rem;
-    text-shadow: var(--resaltadoNegro);
-    color: var(--blanco);
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
+    color: #fbf5f3d7;
     cursor: pointer;
     margin: 0.5rem;
 }
 
 select {
     
-    border: solid 2px var(--principal);
+    border: solid 2px #004A8F;
     border-radius: 5px;
-    background-color: var(--suave);
-    color: var(--blanco);
+    background-color: #026ccf;
+    color: #fbf5f3d7;
     cursor: pointer;
     font-size: 1.25rem;
     text-align: center;
@@ -55,7 +45,7 @@ select {
 
 a {
     text-decoration: none;
-    color: var(--blanco);
+    color: #fbf5f3d7;
 }
 
 
@@ -86,14 +76,14 @@ p {
 /* ---------- NAVEGADOR ---------- */
 
 .fondoAzul{
-    background-color: var(--principal);
+    background-color: #004A8F;
     height: 4rem;
 }
 
 .navMenu {
     align-items: center;
     display: flex; 
-    color: var(--blanco);
+    color: #fbf5f3d7;
     height: 100%;
 }
 
@@ -105,6 +95,9 @@ p {
 .navInicioIcono {
    width: 15%;
    object-fit: contain;
+   transition-property: all;
+   transition-duration: .5s;
+   
 }
 
 .navInicioIcono:hover{
@@ -126,7 +119,12 @@ p {
 
 
 .navSecciones li a:visited {
-    color: var(--blanco)
+    color: #fbf5f3d7
+}
+
+.navSecciones li {
+    transition-property: all;
+    transition-duration: .5s;
 }
 
 .navSecciones li:hover {
@@ -137,10 +135,10 @@ p {
 
 .titulo {
     text-align: center;
-    color: var(--blanco);
+    color: #fbf5f3d7;
     justify-content: center;
     padding: auto;   
-    background-color: var(--principal);
+    background-color: #004A8F;
     background-image: url("../img/fondosYlogos/titulo.png");
     background-size: cover;
     background-position: center top;
@@ -148,7 +146,8 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-shadow:var(--resaltadoPrincipal);
+    text-shadow:-2px 0 #004A8F, 0 2px #004A8F,
+    2px 0 #004A8F, 0 -2px #004A8F;
 }
 
 
@@ -174,35 +173,37 @@ p {
 .barra{
 	max-height: 80vh;
 	margin: 3em;
-	border: solid 4px var(--principal);
+	border: solid 4px #004A8F;
 	border-radius: 10px;
-    background-color: var(--fondo);
+    background-color: #138DFF;
 }
 
 .subtitulo {
 	text-align: center;
-	color: var(--blanco);
-	background-color: var(--suave);
+	color: #fbf5f3d7;
+	background-color: #026ccf;
 	padding: 0.25em;
-    text-shadow: var(--resaltadoNegro);
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
 }
 
 .barra ul li{
-	border-bottom: solid 2px var(--suave);
+	border-bottom: solid 2px #026ccf;
 	padding: .25em;
-    text-shadow: var(--resaltadoNegro);
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
 }
 
 .barra a:visited {
-    color: var(--blanco);
+    color: #fbf5f3d7;
 }
 
 .barra a:hover {
-    color: var(--suave);
+    color: #026ccf;
 }
 
 .estrellas {
-	color: var(--suave);
+	color: #026ccf;
 }
 
 /* ----------SECCION DE DESTACADOS CONFIGURACIONES GLOBALES---------- */
@@ -232,9 +233,10 @@ p {
 
 .cuadro {
     text-align: center;
-    background-color: var(--fondo);
-    border: solid 2px var(--principal);
-    text-shadow: var(--resaltadoNegro);
+    background-color: #138DFF;
+    border: solid 2px #004A8F;
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
 }
 
 .cuadro a img {
@@ -293,40 +295,42 @@ p {
 
 .filtrado {
     background-image: url("../img/fondosYlogos/mejoresUltimos.png");
-    border: solid 4px var(--principal);
+    border: solid 4px #004A8F;
     border-radius: 4px;
     padding: 1rem;
 }
 
 .filtradoTitulo {
     text-align: center;
-    color: var(--blanco);
+    color: #fbf5f3d7;
     font-size: 2rem;
-    text-shadow: var(--resaltadoPrincipal);
+    text-shadow: -2px 0 #004A8F, 0 2px #004A8F,
+    2px 0 #004A8F, 0 -2px #004A8F;
     text-transform: uppercase;
 }
 
 .filtrado label{
     font-size: 1.25rem;
-    color: var(--blanco);
+    color: #fbf5f3d7;
 }
 /* ---------- SECCIONES DE PUBLICACIONES DESTACADAS ---------- */
 
 
 .publicaciones {
-    border: solid 3px var(--principal);
+    border: solid 3px #004A8F;
     border-radius: 5px;
     margin: 1rem 0.5rem;
     padding: 0.5em;
-    background-color: var(--fondo);
+    background-color: #138DFF;
 }
 
 .publicacionesTitulo {
     padding: 0.5rem;
     text-align: center;
     text-decoration: underline;
-    color: var(--blanco);
-    text-shadow: var(--resaltadoNegro);
+    color: #fbf5f3d7;
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
 }
 
 
@@ -360,21 +364,22 @@ p {
 }
 
 fieldset {
-    border:solid 4px var(--principal);
-    background-color: var(--fondo);
+    border:solid 4px #004A8F;
+    background-color: #138DFF;
     text-align: center;
     margin: 1em auto;
     display: flex;
     flex-direction: column;
     max-width: 800px;
 	justify-content: center;
-    color: var(--blanco);
-    text-shadow: var(--resaltadoNegro);
+    color: #fbf5f3d7;
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
 }
 
 fieldset input {
     border: none;
-    border-bottom: solid 3px var(--principal);
+    border-bottom: solid 3px #004A8F;
 	margin: 0.25em auto;
 	padding: 0.25em;
 	font-weight: bold;
@@ -413,17 +418,21 @@ textarea{
 
 /* ---------- FOOTER ---------- */
 
+.footerMovile{
+    display: none;
+}
+
 footer {
     display: flex;
     padding: 0.5em;
 	justify-content: space-evenly;
-    background-color: var(--principal);
-    color: var(--blanco);
+    background-color: #004A8F;
+    color: #fbf5f3d7;
 }
 
 .footerColumnas i {
 	font-size: 2rem;
-	color: var(--blanco);
+	color: #fbf5f3d7;
 }
 
 .redes {
@@ -436,10 +445,10 @@ footer {
 }
 
 footer a:visited {
-    color: var(--blanco);
+    color: #fbf5f3d7;
 }
 footer a:hover{
-    color: var(--pastel);
+    color: #96CCFF;
 }
 
 /* --------------RESPONSIVE TAMAÑO TABLETA------------- */
@@ -448,7 +457,7 @@ footer a:hover{
 
     /* -----ESTILOS GLOBALES----- */   
     
-    
+    li, p {font-size: 1rem;}
     
     h1 {font-size:2.8rem ;}
 
@@ -515,10 +524,6 @@ footer a:hover{
         height: 50vh;
         object-fit: contain;
     }
-
-    /* -----FORMULARIO----- */
-
-
 }
 
 /* ---------- RESPONSIVE TAMAÑO CELULAR ---------- */
@@ -526,7 +531,7 @@ footer a:hover{
 @media screen and (max-width: 576px) {
 
     body{
-        background-color: var(--fondo);
+        background-color: #138DFF;
     }
 
     /* -----ULTIMAS DESTACADO----- */
@@ -534,11 +539,12 @@ footer a:hover{
     .enlaceResponsive{
         display: inline;
         padding: 0.1rem;
-        border: solid 2px var(--principal);
-        background-color: var(--pastel);
+        border: solid 2px #004A8F;
+        background-color: #96CCFF;
         border-radius: 4px;
-        color: var(--suave);
-        text-shadow: var(--resaltadoNegro);
+        color: #026ccf;
+        text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
     }
 
     .gridContainer, .gridContainerDer{
@@ -569,5 +575,33 @@ footer a:hover{
         display: flex;
         width: 90%;
         height: auto;
+    }
+
+    /* ----------FOOTER---------- */
+
+    footer{
+        display: block;
+    }
+
+    .footerColumnas{
+        display: none;
+    }
+
+
+    .footerMovile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 5rem;
+        
+    }
+
+    .footerSectionsMovile, .redesMovile {
+        display: flex;  
+        justify-content: space-between;
+    }
+
+    .footerMovile p {
+        text-align: center;
     }
 }
