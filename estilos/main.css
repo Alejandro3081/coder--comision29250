@@ -34,14 +34,9 @@ body{
     }
   }
   
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
-   
-}
 
 .button {
-    padding: 0.5rem;
+    
     border: outset 3px #004A8F;
     background-color: #026ccf;
     border-radius: 4px;
@@ -62,7 +57,6 @@ select {
     cursor: pointer;
     font-size: 1.25rem;
     text-align: center;
-    
 }
 
 a {
@@ -97,59 +91,18 @@ p {
 
 /* ---------- NAVEGADOR ---------- */
 
-.fondoAzul{
+
+.navegador {
     background-color: #004A8F;
-    height: 4rem;
-}
-
-.navMenu {
-    align-items: center;
-    display: flex; 
-    color: #fbf5f3d7;
-    height: 100%;
 }
 
 
-.navMenu li{
-    display: inline;
-}
-
-.navInicioIcono {
-   width: 15%;
-   object-fit: contain;
-   transition-property: all;
-   transition-duration: .5s;
-   
-}
-
-.navInicioIcono:hover{
-    transform: scale(1.2);
-}
-
-.navMenu a img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.navSecciones {
-    width: 85%;
-    display: flex;
-    justify-content: space-evenly;  
-}
-
-
-
-.navSecciones li a:visited {
-    color: #fbf5f3d7
-}
-
-.navSecciones li {
+.navItems {
     transition-property: all;
     transition-duration: .5s;
 }
 
-.navSecciones li:hover {
+.navItems:hover {
     transform: scale(1.2);   
 }
 
@@ -165,7 +118,6 @@ p {
     background-size: cover;
     background-position: center top;
     height: 100vh;
-    z-index: -1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,11 +146,13 @@ p {
 }
 
 .barra{
-	max-height: 80vh;
+    max-width: 45%;
+	max-height: 90vh;
 	margin: 3em;
 	border: solid 4px #004A8F;
 	border-radius: 10px;
     background-color: #138DFF;
+    /* overflow: auto; revisar esta propiedad*/ 
 }
 
 .subtitulo {
@@ -313,7 +267,8 @@ p {
 /* ---------- FILTRADO DE PUBLICACIONES ---------- */
 
 .fondoFiltrado {
-    margin: 0.5rem;  
+    margin:1rem auto .5rem;  
+    
 }
 
 .filtrado {
@@ -342,7 +297,7 @@ p {
 .publicaciones {
     border: solid 3px #004A8F;
     border-radius: 5px;
-    margin: 1rem 0.5rem;
+    margin: 1rem 0;
     padding: 0.5em;
     background-color: #138DFF;
 }
@@ -441,41 +396,9 @@ textarea{
 
 /* ---------- FOOTER ---------- */
 
-.footerMovile{
-    display: none;
-}
-
-footer {
-    display: flex;
-    padding: 0.5em;
-	justify-content: space-around;
+.fondoFooter {
     background-color: #004A8F;
-    color: #fbf5f3d7;
-}
-
-.footerColumnas{
-    margin: 0.5rem;
-}
-
-.footerColumnas i {
-	font-size: 2rem;
-	color: #fbf5f3d7;
-}
-
-.redes {
-    text-align: center;
-}
-
-.derechos {
-	text-align: center;
-    margin: auto 0;
-}
-
-footer a:visited {
-    color: #fbf5f3d7;
-}
-footer a:hover{
-    color: #96CCFF;
+    
 }
 
 /* --------------RESPONSIVE TAMAÑO TABLETA------------- */
@@ -501,11 +424,7 @@ footer a:hover{
     
     /* ----NAVEGADOR----- */
 
-    .fondoAzul{
-        height: 3.2rem;
-    }
-
-    .navSecciones li:hover, .navInicioIcono:hover {
+    .navbar-brand:hover, .nav-item:hover {
         transform: none;   
     }
 
@@ -513,7 +432,6 @@ footer a:hover{
 
     .titulo {
         height: 70vh;
-        
     }
 
     /* -----ULTIMAS DESTACADO----- */
@@ -557,9 +475,7 @@ footer a:hover{
 
 @media screen and (max-width: 576px) {
 
-    body{
-        background-color: #138DFF;
-    }
+       
 
     /* -----ULTIMAS DESTACADO----- */
 
@@ -604,31 +520,4 @@ footer a:hover{
         height: auto;
     }
 
-    /* ----------FOOTER---------- */
-
-    footer{
-        display: block;
-    }
-
-    .footerColumnas{
-        display: none;
-    }
-
-
-    .footerMovile{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 5rem;
-        
-    }
-
-    .footerSectionsMovile, .redesMovile {
-        display: flex;  
-        justify-content: space-around;
-    }
-
-    .footerMovile p {
-        text-align: center;
-    }
 }

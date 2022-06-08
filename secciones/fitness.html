@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://kit.fontawesome.com/40cb2b1903.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+   		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">		
 		<link rel="stylesheet" href="../estilos/main.css" type="text/css">
 		<title>Fitness</title>
 	</head>
@@ -13,23 +13,30 @@
 		<!-- -----------HEADER----------- -->
 
 		<header>
-			<nav class="fondoAzul">
-				<section class="container navMenu">
-					<a href="../index.html" class="navInicioIcono"><img src="../img/fondosYlogos/LogoST.gif" alt="logo salud total"></a> 											
-					<ul class="navSecciones">
-						<li>
-							<a href="nutricion.html">Nutrición</a>
-						</li>
-						<li>
-							<a href="fitness.html">Fitness</a>
-						</li>
-						<li>
-							<a href="educamente.html">Educamente</a>
-						</li>
-						<li>
-							<a href="registrarse.html">Registrarse</a>
-						</li>
-				</section>
+			<nav class="navegador navbar navbar-expand-md navbar-dark">
+				<div class="container-md">
+				  	<a class="navItems navbar-brand" href="../index.html"><img src="../img/fondosYlogos/LogoST.gif" alt="logo salud total"></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBars" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+			
+					<div class="collapse navbar-collapse" id="navBars">
+						<ul class="navbar-nav ms-auto mb-2">
+							<li class="navItems nav-item">
+								<a class="nav-link" href="nutricion.html">Nutrición</a>
+							</li>
+							<li class="navItems nav-item">
+								<a class="nav-link" href="fitness.html">Fitness</a>
+							</li>
+							<li class="navItems nav-item">
+								<a class="nav-link" href="educamente.html">Educamente</a>
+							</li>
+							<li class="navItems nav-item">
+								<a class="nav-link" href="registrarse.html">Registrarse</a>
+							</li>					  
+						</ul>					
+					</div>
+				</div>
 			</nav>
 		</header>
 
@@ -37,8 +44,8 @@
 
 			<!-- -----------FILTRADO DE PUBLICACIONES---------- -->
 
-			<section class="fondoFiltrado" id="tablaFitness">
-				<form class="filtrado container">
+			<section class="fondoFiltrado container-md" id="tablaFitness">
+				<form class="filtrado">
 					<H2 class="filtradoTitulo">Fitness - Publicaciones Destacadas</H2>
 					<button class="button">Mas recientes</button>
 					<button class="button">Mas populares</button>
@@ -63,7 +70,7 @@
 
 			<!-- ----------TABLA DE PUBLICACIONES---------- -->
 
-			<div class="tablaDePublicaciones container">
+			<div class="container-md">
 				
 				<div class="publicaciones" id="publicacion-1fitness">    
 					<h2 class="publicacionesTitulo">¿Es más saludable caminar fuera o en cinta? - <i>Por GymCompani</i></h2>
@@ -218,81 +225,25 @@
 
 		<!-- ----------FOOTER---------- -->
 
-		<footer>
-			<div class="footerColumnas">   
-				<p>Secciones</p>
-				<ul>
-					<li>
-						<a href="../index.html">Inicio</a>
-					</li>
-					<li>
-						<a href="nutricion.html">Nutrición</a>
-					</li>
-					<li>
-						<a href="fitness.html">Fitness</a>
-					</li>
-					<li>
-						<a href="educamente.html">Educamente</a>
-					</li>
+		<div class="fondoFooter">
+			<footer class="container-md d-flex flex-wrap justify-content-between align-items-center py-1 py-md-3">
+				<ul class="nav justify-content-center">
+				<li class="nav-item"><a href="../index.html" class="nav-link px-2">Inicio</a></li>
+				<li class="nav-item"><a href="nutricion.html" class="nav-link">Nutrición</a></li>
+				<li class="nav-item"><a href="fitness.html" class="nav-link">Fitness</a></li>
+				<li class="nav-item"><a href="educamente.html" class="nav-link">Educamente</a></li>
+				<li class="nav-item"><a href="registrarse.html" class="nav-link">Registrarse</a></li>
 				</ul>
-			</div>
-			<div class="footerColumnas">
-				<ul>
-					<li>
-						<a href="registrarse.html">Registrarse</a>
-					</li>
-					<li>
-						Ranking
-					</li>
-					<li>
-						Usuarios
-					</li>
-					<li>
-						Calendario de Publicaciones
-					</li>
+				<ul class="nav justify-content-center list-unstyled d-flex">
+				<i class="ms-3 text-muted fs-3 fa-brands fa-instagram"></i>
+				<i class="ms-3 text-muted fs-3 fa-brands fa-facebook-square"></i>
+				<i class="ms-3 text-muted fs-3 fa-brands fa-twitter"></i>
 				</ul>
-			</div>
-			<div class="footerColumnas redes">
-				<p>Redes Sociales</p>
-				<i class="fa-brands fa-tiktok"></i>
-				<i class="fa-brands fa-instagram"></i>
-				<i class="fa-brands fa-facebook-square"></i>
-				<i class="fa-brands fa-twitter"></i>
-			</div>
-			<div class="footerColumnas derechos">
-				<p>Página creada por Jorge A. Caballero
-					<br>&copy;Todos los derechos reservados
-				</p>
-			</div>
+				<p class="text-muted my-auto">&copy; 2022 Página creada por Jorge A. Caballero</p>
+			</footer>
+		</div>
 
-			<section class="footerMovile">
-				
-				<ul class="footerSectionsMovile">
-					<li>
-						<a href="../index.html">Inicio</a>
-					</li>
-					<li>
-						<a href="nutricion.html">Nutrición</a>
-					</li>
-					<li>
-						<a href="fitness.html">Fitness</a>
-					</li>
-					<li>
-						<a href="educamente.html">Educamente</a>
-					</li>
-					<li>
-						<a href="registrarse.html">Registrarse</a>
-					</li>
-				</ul>
-				
-				<div class="redesMovile">
-					<i class="fa-brands fa-tiktok"></i>
-					<i class="fa-brands fa-instagram"></i>
-					<i class="fa-brands fa-facebook-square"></i>
-					<i class="fa-brands fa-twitter"></i>
-				</div>
-			</section>
-		</footer>
-
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/40cb2b1903.js" crossorigin="anonymous"></script>
 	</body>
 </html>
