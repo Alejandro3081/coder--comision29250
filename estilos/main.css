@@ -141,6 +141,7 @@ p {
 .seccionUltimosDestacados {
     display: flex;  
     align-items: center; 
+    justify-content: space-between;
     width: 100%;
     height: 100%;
 }
@@ -148,18 +149,25 @@ p {
 .barra{
     max-width: 45%;
 	max-height: 90vh;
-	margin: 3em;
 	border: solid 4px #004A8F;
 	border-radius: 10px;
     background-color: #138DFF;
-    /* overflow: auto; revisar esta propiedad*/ 
+    overflow: auto;
+}
+
+.barra::-webkit-scrollbar {
+    width: 7px;
+}
+
+.barra::-webkit-scrollbar-thumb {
+    background-color: #026ccf;
+    border-radius: 5px;
 }
 
 .subtitulo {
 	text-align: center;
 	color: #fbf5f3d7;
 	background-color: #026ccf;
-	padding: 0.25em;
     text-shadow: -1px 0 black, 0 1px black,
     1px 0 black, 0 -1px black;
 }
@@ -189,9 +197,16 @@ p {
     display: none;
 }
 
+.tituloSeccion {
+    text-align: center;
+	color: #fbf5f3d7;
+	text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
+}
+
 .gridContainer {
     display: grid;
-    grid-template-columns: 100px 1fr 35%;
+    grid-template-columns: 100px auto 35%;
     grid-template-rows: 1fr 5fr 1fr;
 }
 
@@ -220,6 +235,10 @@ p {
     width: 100%;
     height: 80%;
     object-fit: cover; 
+}
+
+.cuadro a p {
+    line-height: normal;
 }
 
 /* ----------SECCION DE NUTRICION DESTACADOS---------- */
@@ -261,7 +280,6 @@ p {
 .destacadoEducamente {
     grid-area: 2/2/ 3/3;  
 }
-
 
 
 /* ---------- FILTRADO DE PUBLICACIONES ---------- */
@@ -401,6 +419,30 @@ textarea{
     
 }
 
+/* ============GRID INDEX RESPONSIVE========== */
+
+@media screen and (max-width: 1200px) {
+    .gridContainer {   
+        grid-template-columns: 80px auto 25%;       
+    }
+    
+    .gridContainerDer {
+        grid-template-columns: 25% auto 80px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .gridContainer {   
+        grid-template-columns: 50px auto 15%;       
+    }
+    
+    .gridContainerDer {
+        grid-template-columns: 15% auto 50px;
+    }
+}
+
+
+
 /* --------------RESPONSIVE TAMAÑO TABLETA------------- */
 
 @media screen and (max-width: 768px) {
@@ -500,8 +542,18 @@ textarea{
        grid-template-columns: 1fr;
    }
 
+   .tituloSeccion{
+       border: solid 3px #004A8F;
+       border-radius: 5px;
+   }
+
+   .cuadro a p{
+       font-size: 1.5rem;
+   }
+
    .fondoNutricion, .fondoFitness, .fondoEducamente{
        height: 100%;
+       background: none;
     }
    
     .cuadro a img{
@@ -518,6 +570,12 @@ textarea{
         display: flex;
         width: 90%;
         height: auto;
+    }
+
+    /* --------FORM-------- */
+
+    fieldset input, .nacionSexo, textarea {
+        width: 400px;
     }
 
 }
