@@ -13,47 +13,85 @@ body{
     background-color: #026ccf;
 }
 
-.color-change-2x {
-	-webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
-}
-@-webkit-keyframes color-change-2x {
-    0% {
-      background: #026ccf;
-    }
-    100% {
-      background: #96CCFF;
-    }
-  }
-  @keyframes color-change-2x {
-    0% {
-      background: #026ccf;
-    }
-    100% {
-      background: #96CCFF;
-    }
-  }
-  
+/* ======BOTONES CON ANIMACION HOVER====== */
 
 .button {
-    
-    border: outset 3px #004A8F;
+    position: relative;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    outline: none;
     background-color: #026ccf;
-    border-radius: 4px;
     font-size: 1.5rem;
     text-shadow: -1px 0 black, 0 1px black,
     1px 0 black, 0 -1px black;
-    color: #fbf5f3d7;
+    color: #fbf5f3;
     cursor: pointer;
     margin: 0.5rem;
+    transition: 0.5s;
+    overflow: hidden;
 }
+
+.button:hover {
+    background-color: #138DFF;
+}
+
+.button span {
+    position: absolute;
+    background-color: #fbf5f3;
+    transition: 0.5s;
+}
+
+.button span:nth-child(1) {
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: -100%;
+}
+
+.button span:nth-child(2) {
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    right: -100%;
+}
+.button span:nth-child(3) {
+    width: 2px;
+    height: 100%;
+    right: 0;
+    top: -100%;
+}
+.button span:nth-child(4) {
+    width: 2px;
+    height: 100%;
+    left: 0;
+    bottom: -100%;
+}
+
+.button:hover span:nth-child(1) {
+    left: 0;
+}
+
+.button:hover span:nth-child(2) {
+    right: 0;
+}
+
+.button:hover span:nth-child(3) {
+    top: 0;
+}
+
+.button:hover span:nth-child(4) {
+    bottom: 0;
+}
+
+
+/* ============================================== */
 
 select {
     
     border: solid 2px #004A8F;
     border-radius: 5px;
     background-color: #026ccf;
-    color: #fbf5f3d7;
+    color: #fbf5f3;
     cursor: pointer;
     font-size: 1.25rem;
     text-align: center;
@@ -61,7 +99,7 @@ select {
 
 a {
     text-decoration: none;
-    color: #fbf5f3d7;
+    color: #fbf5f3;
 }
 
 
@@ -110,7 +148,7 @@ p {
 
 .titulo {
     text-align: center;
-    color: #fbf5f3d7;
+    color: #fbf5f3;
     justify-content: center;
     padding: auto;   
     background-color: #004A8F;
@@ -166,7 +204,7 @@ p {
 
 .subtitulo {
 	text-align: center;
-	color: #fbf5f3d7;
+	color: #fbf5f3;
 	background-color: #026ccf;
     text-shadow: -1px 0 black, 0 1px black,
     1px 0 black, 0 -1px black;
@@ -180,7 +218,7 @@ p {
 }
 
 .barra a:visited {
-    color: #fbf5f3d7;
+    color: #fbf5f3;
 }
 
 .barra a:hover {
@@ -199,7 +237,7 @@ p {
 
 .tituloSeccion {
     text-align: center;
-	color: #fbf5f3d7;
+	color: #fbf5f3;
 	text-shadow: -1px 0 black, 0 1px black,
     1px 0 black, 0 -1px black;
 }
@@ -281,6 +319,22 @@ p {
     grid-area: 2/2/ 3/3;  
 }
 
+/* ==========CAROUSEL========== */
+
+
+
+.carouselImg {
+    height: 35rem;
+    object-fit: cover;
+}
+
+.carouselText {
+    color: #fbf5f3;
+	text-shadow: -1.5px 0 black, 0 1.5px black,
+    1.5px 0 black, 0 -1.5px black;
+}
+
+
 
 /* ---------- FILTRADO DE PUBLICACIONES ---------- */
 
@@ -298,7 +352,7 @@ p {
 
 .filtradoTitulo {
     text-align: center;
-    color: #fbf5f3d7;
+    color: #fbf5f3;
     font-size: 2rem;
     text-shadow: -2px 0 #004A8F, 0 2px #004A8F,
     2px 0 #004A8F, 0 -2px #004A8F;
@@ -307,7 +361,7 @@ p {
 
 .filtrado label{
     font-size: 1.25rem;
-    color: #fbf5f3d7;
+    color: #fbf5f3;
 }
 /* ---------- SECCIONES DE PUBLICACIONES DESTACADAS ---------- */
 
@@ -324,7 +378,7 @@ p {
     padding: 0.5rem;
     text-align: center;
     text-decoration: underline;
-    color: #fbf5f3d7;
+    color: #fbf5f3;
     text-shadow: -1px 0 black, 0 1px black,
     1px 0 black, 0 -1px black;
 }
@@ -341,7 +395,7 @@ p {
 }
 
 .publicacionesImg {
-    width: 60%;
+    width: 70%;
     display: block;
     margin: 1rem auto 1rem auto;
 }
@@ -368,7 +422,7 @@ fieldset {
     flex-direction: column;
     max-width: 800px;
 	justify-content: center;
-    color: #fbf5f3d7;
+    color: #fbf5f3;
     text-shadow: -1px 0 black, 0 1px black,
     1px 0 black, 0 -1px black;
 }
@@ -499,6 +553,12 @@ textarea{
         display: none;
     }
 
+    /* ==========CAROUSEL========== */
+
+    .carouselImg {
+        height: 25rem;
+    }
+
     /* -----FILTRADO PUBLICACIONES----- */
 
     .filtradoTitulo{
@@ -508,7 +568,7 @@ textarea{
     /* -----PUBLICACIONES----- */
 
     .publicacionesImg {
-        height: 50vh;
+        width: 95%;
         object-fit: contain;
     }
 }
@@ -562,6 +622,12 @@ textarea{
 
     .cuadro a p{
         padding: 0.5rem;
+    }
+
+    /* ==========CAROUSEL========== */
+
+    .carouselImg {
+        height: 20rem;
     }
 
     /* -----PUBLICACIONES----- */
