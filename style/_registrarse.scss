@@ -1,0 +1,56 @@
+/* ---------- FORMULARIO DE CUENTA NUEVA ---------- */
+
+.form {
+	margin: 0.5em auto;
+}
+
+fieldset {
+    border:solid 4px $principal;
+    background-color: $fondo;
+    text-align: center;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+	justify-content: center;
+    color: $blanco;
+    text-shadow: $resaltadoNegro;
+    input {
+        border: none;
+        border-bottom: solid 3px $principal;
+        margin: 0.25em auto;
+        padding: 0.25em;
+        font-weight: bold;
+        font-size: 1rem;
+        width: 500px;
+    }
+}
+
+[type="radio"] ,[type="checkbox"] {
+	width: auto;
+}
+
+.nacionSexo {
+	display: inline-flex;
+	width: 500px;
+	align-items: center;
+	justify-content: space-around;
+    input {
+        margin: 0;
+    }
+}
+
+.interes {
+    p {
+        margin-bottom: 0.5em;
+    }
+}
+
+textarea{
+	width: 500px;
+	height: 200px;
+	margin: 0.25em auto;
+	font: 16px bolder;
+    resize: none;
+    font-family: 'Squada One', cursive;
+}

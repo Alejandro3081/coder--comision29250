@@ -1,0 +1,554 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Squada One", cursive;
+}
+
+body {
+  background-color: #026ccf;
+}
+
+.button {
+  position: relative;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  outline: none;
+  background-color: #026ccf;
+  font-size: 1.5rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: #fbf5f3;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.button span {
+  position: absolute;
+  background-color: #fbf5f3;
+  transition: 0.5s;
+}
+.button span:nth-child(1) {
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: -100%;
+}
+.button span:nth-child(2) {
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  right: -100%;
+}
+.button span:nth-child(3) {
+  width: 2px;
+  height: 100%;
+  right: 0;
+  top: -100%;
+}
+.button span:nth-child(4) {
+  width: 2px;
+  height: 100%;
+  left: 0;
+  bottom: -100%;
+}
+.button:hover {
+  background-color: #138DFF;
+}
+.button:hover span:nth-child(1) {
+  left: 0;
+}
+.button:hover span:nth-child(2) {
+  right: 0;
+}
+.button:hover span:nth-child(3) {
+  top: 0;
+}
+.button:hover span:nth-child(4) {
+  bottom: 0;
+}
+
+select {
+  border: solid 2px #004A8F;
+  border-radius: 5px;
+  background-color: #026ccf;
+  color: #fbf5f3;
+  cursor: pointer;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fbf5f3;
+}
+
+li {
+  list-style: none;
+  font-size: 1.25rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.7rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+/* ========== NAVEGADOR ==========- */
+.navegador {
+  background-color: #004A8F;
+}
+
+.navItems {
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.navItems:hover {
+  transform: scale(1.2);
+}
+
+/* ---------- FOOTER ---------- */
+.fondoFooter {
+  background-color: #004A8F;
+}
+
+/* ---------- TITULO PAGINA INICIO ---------- */
+.titulo {
+  text-align: center;
+  color: rgba(251, 245, 243, 0.8431372549);
+  justify-content: center;
+  padding: auto;
+  background-color: #004A8F;
+  background-image: url("../img/fondosYlogos/titulo.png");
+  background-size: cover;
+  background-position: center top;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: -2px 0 #004A8F, 0 2px #004A8F, 2px 0 #004A8F, 0 -2px #004A8F;
+}
+
+/* ---------- SECCION ULTIMAS PUBLICACIONES Y DESTACADOS ---------- */
+.fondoUltimosDestacados {
+  background-image: url("../img/fondosYlogos/mejoresUltimos.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+.seccionUltimosDestacados {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.barra {
+  max-width: 45%;
+  max-height: 90vh;
+  border: solid 4px #004A8F;
+  border-radius: 10px;
+  background-color: #138DFF;
+  overflow: auto;
+}
+.barra a:visited {
+  color: rgba(251, 245, 243, 0.8431372549);
+}
+.barra a:hover {
+  color: #026ccf;
+}
+.barra ul li {
+  border-bottom: solid 2px #026ccf;
+  padding: 0.25em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.barra::-webkit-scrollbar {
+  width: 7px;
+}
+.barra::-webkit-scrollbar-thumb {
+  background-color: #026ccf;
+  border-radius: 5px;
+}
+
+.subtitulo {
+  text-align: center;
+  color: rgba(251, 245, 243, 0.8431372549);
+  background-color: #026ccf;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.estrellas {
+  color: #026ccf;
+}
+
+/* ----------SECCION DE DESTACADOS CONFIGURACIONES GLOBALES---------- */
+.enlaceResponsive {
+  display: none;
+}
+
+.tituloSeccion {
+  text-align: center;
+  color: rgba(251, 245, 243, 0.8431372549);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 100px auto 35%;
+  grid-template-rows: 1fr 5fr 1fr;
+}
+
+.gridContainerDer {
+  display: grid;
+  grid-template-columns: 35% auto 100px;
+  grid-template-rows: 1fr 5fr 1fr;
+}
+
+.destacadoContenido {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  max-height: 80vh;
+}
+
+.cuadro {
+  text-align: center;
+  background-color: #138DFF;
+  border: solid 2px #004A8F;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.cuadro a img {
+  width: 100%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cuadro a p {
+  line-height: normal;
+}
+
+/* ----------SECCION DE NUTRICION DESTACADOS---------- */
+.fondoNutricion {
+  background-image: url("../img/fondosYlogos/nutricionDestacados.png");
+  height: 100vh;
+  background-size: cover;
+  background-position: right top;
+}
+
+.destacadoNutricion {
+  grid-area: 2/2/3/3;
+}
+
+/* ----------SECCION DE FITNESS DESTACADOS---------- */
+.fondoFitness {
+  background-image: url("../img/fondosYlogos/fitnessDestacados.png");
+  height: 100vh;
+  background-size: cover;
+}
+
+.destacadoFitness {
+  grid-area: 2/2/3/3;
+}
+
+/* ----------SECCION DE MEGAMENTE DESTACADOS---------- */
+.fondoEducamente {
+  background-image: url("../img/fondosYlogos/educamenteDestacados.png");
+  height: 100vh;
+  background-size: cover;
+  background-position: right top;
+}
+
+.destacadoEducamente {
+  grid-area: 2/2/3/3;
+}
+
+/* ==========CAROUSEL========== */
+.carouselImg {
+  height: 35rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carouselText {
+  color: rgba(251, 245, 243, 0.8431372549);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* ---------- FILTRADO DE PUBLICACIONES ---------- */
+.fondoFiltrado {
+  margin: 1rem auto 0.5rem;
+}
+
+.filtrado {
+  background-image: url("../img/fondosYlogos/mejoresUltimos.png");
+  border: solid 4px #004A8F;
+  border-radius: 4px;
+  padding: 1rem;
+}
+.filtrado label {
+  font-size: 1.25rem;
+  color: rgba(251, 245, 243, 0.8431372549);
+}
+
+.filtradoTitulo {
+  text-align: center;
+  color: rgba(251, 245, 243, 0.8431372549);
+  font-size: 2rem;
+  text-shadow: -2px 0 #004A8F, 0 2px #004A8F, 2px 0 #004A8F, 0 -2px #004A8F;
+  text-transform: uppercase;
+}
+
+/* ---------- SECCIONES DE PUBLICACIONES DESTACADAS ---------- */
+.publicaciones {
+  border: solid 3px #004A8F;
+  border-radius: 5px;
+  margin: 1rem 0;
+  padding: 0.5em;
+  background-color: #138DFF;
+}
+
+.publicacionesTitulo {
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: underline;
+  color: rgba(251, 245, 243, 0.8431372549);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.publicacionesContenido p {
+  margin: 1rem;
+}
+.publicacionesContenido h3 {
+  margin: 2rem 1rem 1rem;
+}
+
+.publicacionesImg {
+  width: 70%;
+  display: block;
+  margin: 1rem auto 1rem auto;
+}
+
+.publicacionesVideo {
+  display: block;
+  margin: 1rem auto 1rem auto;
+  width: 560px;
+  height: 315px;
+}
+
+/* ---------- FORMULARIO DE CUENTA NUEVA ---------- */
+.form {
+  margin: 0.5em auto;
+}
+
+fieldset {
+  border: solid 4px #004A8F;
+  background-color: #138DFF;
+  text-align: center;
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  justify-content: center;
+  color: rgba(251, 245, 243, 0.8431372549);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+fieldset input {
+  border: none;
+  border-bottom: solid 3px #004A8F;
+  margin: 0.25em auto;
+  padding: 0.25em;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 500px;
+}
+
+[type=radio], [type=checkbox] {
+  width: auto;
+}
+
+.nacionSexo {
+  display: inline-flex;
+  width: 500px;
+  align-items: center;
+  justify-content: space-around;
+}
+.nacionSexo input {
+  margin: 0;
+}
+
+.interes p {
+  margin-bottom: 0.5em;
+}
+
+textarea {
+  width: 500px;
+  height: 200px;
+  margin: 0.25em auto;
+  font: 16px bolder;
+  resize: none;
+  font-family: "Squada One", cursive;
+}
+
+/* ============GRID INDEX RESPONSIVE========== */
+@media screen and (max-width: 1200px) {
+  .gridContainer {
+    grid-template-columns: 80px auto 25%;
+  }
+
+  .gridContainerDer {
+    grid-template-columns: 25% auto 80px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .gridContainer {
+    grid-template-columns: 50px auto 15%;
+  }
+
+  .gridContainerDer {
+    grid-template-columns: 15% auto 50px;
+  }
+}
+/* --------------RESPONSIVE TAMAÑO TABLETA------------- */
+@media screen and (max-width: 768px) {
+  /* -----ESTILOS GLOBALES----- */
+  li, p {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2.16rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  .button {
+    padding: 0.4rem;
+    font-size: 1.2rem;
+  }
+
+  /* ----NAVEGADOR----- */
+  .navbar-brand:hover, .nav-item:hover {
+    transform: none;
+  }
+
+  /* -----TITULO----- */
+  .titulo {
+    height: 70vh;
+  }
+
+  /* -----ULTIMAS DESTACADO----- */
+  .fondoUltimosDestacados {
+    display: none;
+  }
+
+  .gridContainer, .gridContainerDer {
+    grid-template-columns: 10% auto 10%;
+    align-items: center;
+  }
+
+  .destacadoContenido {
+    grid-template-rows: 1fr;
+  }
+
+  .fondoNutricion, .fondoFitness, .fondoEducamente {
+    height: 70vh;
+  }
+
+  .cuadroDisplay {
+    display: none;
+  }
+
+  /* ==========CAROUSEL========== */
+  .carouselImg {
+    height: 25rem;
+  }
+
+  /* -----FILTRADO PUBLICACIONES----- */
+  .filtradoTitulo {
+    font-size: 1.6rem;
+  }
+
+  /* -----PUBLICACIONES----- */
+  .publicacionesImg {
+    width: 95%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+/* ---------- RESPONSIVE TAMAÑO CELULAR ---------- */
+@media screen and (max-width: 576px) {
+  /* -----ULTIMAS DESTACADO----- */
+  .enlaceResponsive {
+    display: inline;
+    padding: 0.1rem;
+    border: solid 2px #004A8F;
+    background-color: #96CCFF;
+    border-radius: 4px;
+    color: #026ccf;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .gridContainer, .gridContainerDer {
+    display: block;
+    margin: 1rem;
+  }
+
+  .destacadoContenido {
+    max-height: 95%;
+    grid-template-columns: 1fr;
+  }
+
+  .tituloSeccion {
+    border: solid 3px #004A8F;
+    border-radius: 5px;
+  }
+
+  .cuadro a p {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .cuadro a img {
+    height: auto;
+  }
+
+  .fondoNutricion, .fondoFitness, .fondoEducamente {
+    height: 100%;
+    background: none;
+  }
+
+  /* ==========CAROUSEL========== */
+  .carouselImg {
+    height: 20rem;
+  }
+
+  /* -----PUBLICACIONES----- */
+  .publicacionesVideo {
+    display: flex;
+    width: 90%;
+    height: auto;
+  }
+
+  /* --------FORM-------- */
+  fieldset input, .nacionSexo, textarea {
+    width: 400px;
+  }
+}/*# sourceMappingURL=style.css.map */

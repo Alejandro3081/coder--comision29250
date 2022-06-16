@@ -1,0 +1,162 @@
+/* ---------- TITULO PAGINA INICIO ---------- */
+
+.titulo {
+    text-align: center;
+    color: $blanco;
+    justify-content: center;
+    padding: auto;   
+    background-color: $principal;
+    background-image: url("../img/fondosYlogos/titulo.png");
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: $resaltadoPrincipal;
+}
+
+/* ---------- SECCION ULTIMAS PUBLICACIONES Y DESTACADOS ---------- */
+
+.fondoUltimosDestacados {
+    background-image: url("../img/fondosYlogos/mejoresUltimos.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.seccionUltimosDestacados {
+    display: flex;  
+    align-items: center; 
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.barra{
+    max-width: 45%;
+	max-height: 90vh;
+	border: solid 4px $principal;
+	border-radius: 10px;
+    background-color: $fondo;
+    overflow: auto;
+    a {
+        &:visited {
+            color: $blanco;
+        }
+        &:hover {
+            color: $suave;
+        }
+    }
+    ul {
+        li {
+            border-bottom: solid 2px $suave;
+            padding: .25em;
+            text-shadow: $resaltadoNegro;
+        }
+    }
+    &::-webkit-scrollbar {
+        width: 7px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $suave;
+        border-radius: 5px;
+    }
+}
+
+.subtitulo {
+	text-align: center;
+	color: $blanco;
+	background-color: $suave;
+    text-shadow: $resaltadoNegro;
+}
+
+.estrellas {
+	color: $suave;
+}
+
+/* ----------SECCION DE DESTACADOS CONFIGURACIONES GLOBALES---------- */
+
+.enlaceResponsive {
+    display: none;
+}
+
+.tituloSeccion {
+    text-align: center;
+	color: $blanco;
+	text-shadow: $resaltadoNegro;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 100px auto 35%;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
+.gridContainerDer {
+    display: grid;
+    grid-template-columns: 35% auto 100px;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
+.destacadoContenido {
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    max-height: 80vh;
+}
+
+.cuadro {
+    text-align: center;
+    background-color: $fondo;
+    border: solid 2px $principal;
+    text-shadow: $resaltadoNegro;
+    a {
+        img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover; 
+        }
+        p {
+            line-height: normal;
+        }
+    }
+}
+
+/* ----------SECCION DE NUTRICION DESTACADOS---------- */
+
+.fondoNutricion {
+    background-image: url("../img/fondosYlogos/nutricionDestacados.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: right top;
+}
+
+.destacadoNutricion {
+    grid-area: 2/2/ 3/3;
+}
+
+/* ----------SECCION DE FITNESS DESTACADOS---------- */
+
+.fondoFitness {
+    background-image: url("../img/fondosYlogos/fitnessDestacados.png");
+    height: 100vh;
+    background-size: cover;
+    
+}
+
+.destacadoFitness {
+    grid-area: 2/2/ 3/3;  
+}
+
+/* ----------SECCION DE MEGAMENTE DESTACADOS---------- */
+
+.fondoEducamente {
+    background-image: url("../img/fondosYlogos/educamenteDestacados.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: right top;
+}
+
+.destacadoEducamente {
+    grid-area: 2/2/ 3/3;  
+}
