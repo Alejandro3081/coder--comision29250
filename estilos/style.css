@@ -4,30 +4,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Squada One", cursive;
 }
 
 body {
   background-color: #026ccf;
+  font-family: "Squada One", cursive;
 }
 
 .button {
   position: relative;
   padding: 0.25rem 0.5rem;
+  background-color: #026ccf;
+  color: rgba(251, 245, 243, 0.8431372549);
+  cursor: pointer;
+  font-size: 1.5rem;
   border: none;
   outline: none;
-  background-color: #026ccf;
-  font-size: 1.5rem;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  color: #fbf5f3;
-  cursor: pointer;
   margin: 0.5rem;
   transition: 0.5s;
   overflow: hidden;
 }
 .button span {
   position: absolute;
-  background-color: #fbf5f3;
+  background-color: rgba(251, 245, 243, 0.8431372549);
   transition: 0.5s;
 }
 .button span:nth-child(1) {
@@ -71,18 +71,18 @@ body {
 }
 
 select {
+  background-color: #026ccf;
+  color: rgba(251, 245, 243, 0.8431372549);
+  cursor: pointer;
+  font-size: 1.5rem;
   border: solid 2px #004A8F;
   border-radius: 5px;
-  background-color: #026ccf;
-  color: #fbf5f3;
-  cursor: pointer;
-  font-size: 1.25rem;
   text-align: center;
 }
 
 a {
   text-decoration: none;
-  color: #fbf5f3;
+  color: rgba(251, 245, 243, 0.8431372549);
 }
 
 li {
@@ -240,9 +240,9 @@ p {
   line-height: normal;
 }
 
-/* ----------SECCION DE NUTRICION DESTACADOS---------- */
+/* ----------SECCIONES DESTACADAS---------- */
 .fondoNutricion {
-  background-image: url("../img/fondosYlogos/nutricionDestacados.png");
+  background-image: url("../img/fondosYlogos/NutricionDestacados.png");
   height: 100vh;
   background-size: cover;
   background-position: right top;
@@ -252,20 +252,19 @@ p {
   grid-area: 2/2/3/3;
 }
 
-/* ----------SECCION DE FITNESS DESTACADOS---------- */
 .fondoFitness {
-  background-image: url("../img/fondosYlogos/fitnessDestacados.png");
+  background-image: url("../img/fondosYlogos/FitnessDestacados.png");
   height: 100vh;
   background-size: cover;
+  background-position: left top;
 }
 
 .destacadoFitness {
   grid-area: 2/2/3/3;
 }
 
-/* ----------SECCION DE MEGAMENTE DESTACADOS---------- */
 .fondoEducamente {
-  background-image: url("../img/fondosYlogos/educamenteDestacados.png");
+  background-image: url("../img/fondosYlogos/EducamenteDestacados.png");
   height: 100vh;
   background-size: cover;
   background-position: right top;
@@ -335,29 +334,26 @@ p {
   margin: 2rem 1rem 1rem;
 }
 
-.publicacionesImg {
+.publicacionesImg, .publicacionesVideo {
   width: 70%;
   display: block;
   margin: 1rem auto 1rem auto;
 }
 
 .publicacionesVideo {
-  display: block;
-  margin: 1rem auto 1rem auto;
-  width: 560px;
   height: 315px;
 }
 
 /* ---------- FORMULARIO DE CUENTA NUEVA ---------- */
 .form {
-  margin: 0.5em auto;
+  margin: 0.5rem auto;
 }
 
 fieldset {
   border: solid 4px #004A8F;
   background-color: #138DFF;
   text-align: center;
-  margin: 1em auto;
+  margin: 1rem auto;
   display: flex;
   flex-direction: column;
   max-width: 800px;
@@ -368,7 +364,7 @@ fieldset {
 fieldset input {
   border: none;
   border-bottom: solid 3px #004A8F;
-  margin: 0.25em auto;
+  margin: 0.25rem auto;
   padding: 0.25em;
   font-weight: bold;
   font-size: 1rem;
@@ -396,8 +392,9 @@ fieldset input {
 textarea {
   width: 500px;
   height: 200px;
-  margin: 0.25em auto;
-  font: 16px bolder;
+  margin: 0.25rem auto;
+  font-size: 1rem;
+  font-weight: bold;
   resize: none;
   font-family: "Squada One", cursive;
 }
@@ -488,7 +485,7 @@ textarea {
   }
 
   /* -----PUBLICACIONES----- */
-  .publicacionesImg {
+  .publicacionesImg, .publicacionesVideo {
     width: 95%;
     -o-object-fit: contain;
        object-fit: contain;

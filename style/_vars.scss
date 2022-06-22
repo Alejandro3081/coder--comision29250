@@ -7,3 +7,31 @@ $resaltadoNegro: -1px 0 black, 0 1px black,
 1px 0 black, 0 -1px black;
 $resaltadoPrincipal: -2px 0 $principal, 0 2px $principal,
 2px 0 $principal, 0 -2px $principal;
+
+// map _inicio
+
+$bgimg: (
+    Nutricion: right top,
+    Fitness: left top,
+    Educamente: right top
+);
+
+//map-get -registrarse
+
+$formstyle: (
+    tamaño: 500px,
+    alto: 1rem,
+    ancho: bold,
+    margen: 0.25rem auto,
+    centrado: center
+);
+
+//mixin -estilosGlobales
+
+@mixin sizes($bgc, $color, $cursor, $fs, $border) {
+    background-color: $bgc;
+    color: $color;
+    cursor: $cursor;
+    font-size: $fs; 
+    border: $border;   
+}

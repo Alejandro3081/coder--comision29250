@@ -122,38 +122,17 @@
     }
 }
 
-/* ----------SECCION DE NUTRICION DESTACADOS---------- */
+/* ----------SECCIONES DESTACADAS---------- */
 
-.fondoNutricion {
-    background-image: url("../img/fondosYlogos/nutricionDestacados.png");
-    height: 100vh;
-    background-size: cover;  
-}
-
-.destacadoNutricion {
-    grid-area: 2/2/ 3/3;
-}
-
-/* ----------SECCION DE FITNESS DESTACADOS---------- */
-
-.fondoFitness {
-    background-image: url("../img/fondosYlogos/fitnessDestacados.png");
-    height: 100vh;
-    background-size: cover;
-}
-
-.destacadoFitness {
-    grid-area: 2/2/ 3/3;  
-}
-
-/* ----------SECCION DE MEGAMENTE DESTACADOS---------- */
-
-.fondoEducamente {
-    background-image: url("../img/fondosYlogos/educamenteDestacados.png");
-    height: 100vh;
-    background-size: cover;    
-}
-
-.destacadoEducamente {
-    grid-area: 2/2/ 3/3;  
+@each $seccion, $posicion in $bgimg {
+    .fondo#{$seccion} {
+        background-image: url("../img/fondosYlogos/#{$seccion}Destacados.png");
+        // tuve que cambiar los nombre de las imagenes para que coincida por eso empiezan con mayusculas
+        height: 100vh;
+        background-size: cover;
+        background-position: $posicion;
+    }
+    .destacado#{$seccion} {
+        grid-area: 2/2/ 3/3;
+    }
 }

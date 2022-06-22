@@ -68,9 +68,9 @@
     margin: 1rem auto 1rem auto;
 }
 
+//extend
+
 .publicacionesVideo {
-    display: block;
-    margin: 1rem auto 1rem auto;
-    width: 560px;
+    @extend .publicacionesImg;
     height: 315px;;
 }
