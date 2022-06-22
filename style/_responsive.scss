@@ -1,0 +1,166 @@
+/* ============GRID INDEX RESPONSIVE========== */
+
+@media screen and (max-width: 1200px) {
+    .gridContainer {   
+        grid-template-columns: 80px auto 25%;       
+    }
+    
+    .gridContainerDer {
+        grid-template-columns: 25% auto 80px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .gridContainer {   
+        grid-template-columns: 50px auto 15%;       
+    }
+    
+    .gridContainerDer {
+        grid-template-columns: 15% auto 50px;
+    }
+}
+
+/* --------------RESPONSIVE TAMAÑO TABLETA------------- */
+
+@media screen and (max-width: 768px) {
+
+    /* -----ESTILOS GLOBALES----- */   
+    
+    li, p {font-size: 1rem;}
+    
+    h1 {font-size:2.8rem ;}
+
+    h2 {font-size: 2.16rem;}
+
+    h3 {font-size: 1.6rem;}
+
+    
+
+    .button {
+        padding: 0.4rem;
+        font-size: 1.2rem;
+    }
+    
+    /* ----NAVEGADOR----- */
+
+    .navbar-brand:hover, .nav-item:hover {
+        transform: none;   
+    }
+
+    /* -----TITULO----- */
+
+    .titulo {
+        height: 70vh;
+    }
+
+    /* -----ULTIMAS DESTACADO----- */
+
+    .fondoUltimosDestacados {
+        display: none;
+    }
+
+    .gridContainer, .gridContainerDer{
+        grid-template-columns: 10% auto 10%;
+        align-items: center;
+    }
+
+    .destacadoContenido{
+        grid-template-rows: 1fr;
+    }
+
+    .fondoNutricion, .fondoFitness, .fondoEducamente{
+        height: 70vh;      
+    }
+
+    .cuadroDisplay {
+        display: none;
+    }
+
+    /* ==========CAROUSEL========== */
+
+    .carouselImg {
+        height: 25rem;
+    }
+
+    /* -----FILTRADO PUBLICACIONES----- */
+
+    .filtradoTitulo{
+        font-size: 1.6rem;
+    }
+
+    /* -----PUBLICACIONES----- */
+
+    .publicacionesImg {
+        width: 95%;
+        object-fit: contain;
+    }
+}
+
+/* ---------- RESPONSIVE TAMAÑO CELULAR ---------- */
+
+@media screen and (max-width: 576px) {
+
+    /* -----ULTIMAS DESTACADO----- */
+
+    .enlaceResponsive{
+        display: inline;
+        padding: 0.1rem;
+        border: solid 2px $principal;
+        background-color: $pastel;
+        border-radius: 4px;
+        color: $suave;
+        text-shadow: $resaltadoNegro;
+    }
+
+    .gridContainer, .gridContainerDer{
+        display: block;
+        margin: 1rem;
+    }
+
+   .destacadoContenido{
+       max-height: 95%;
+       grid-template-columns: 1fr;
+   }
+
+   .tituloSeccion{
+       border: solid 3px $principal;
+       border-radius: 5px;
+   }
+
+   .cuadro{
+        a {
+            p{
+                font-size: 1.5rem;
+                padding: 0.5rem;
+            }
+            img{
+                height: auto;
+            }
+        }
+   }
+
+   .fondoNutricion, .fondoFitness, .fondoEducamente{
+       height: 100%;
+       background: none;
+    }
+   
+    /* ==========CAROUSEL========== */
+
+    .carouselImg {
+        height: 20rem;
+    }
+
+    /* -----PUBLICACIONES----- */
+
+    .publicacionesVideo{
+        display: flex;
+        width: 90%;
+        height: auto;
+    }
+
+    /* --------FORM-------- */
+
+    fieldset input, .nacionSexo, textarea {
+        width: 400px;
+    }
+}
