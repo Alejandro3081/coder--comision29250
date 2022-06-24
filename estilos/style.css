@@ -55,7 +55,7 @@ body {
   bottom: -100%;
 }
 .button:hover {
-  background-color: #138DFF;
+  background-color: #004A8F;
 }
 .button:hover span:nth-child(1) {
   left: 0;

@@ -50,7 +50,7 @@ body{
         }
     }
     &:hover {
-        background-color: #138DFF;
+        background-color: $principal;
         span {
             &:nth-child(1) {
                 left: 0;
