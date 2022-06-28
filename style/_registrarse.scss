@@ -34,7 +34,7 @@ fieldset {
 	display: inline-flex;
 	width: map-get($formstyle, tamaño);
 	align-items: map-get($formstyle, centrado);
-	justify-content: space-around;
+	justify-content: space-evenly;
     input {
         margin: 0;
     }

@@ -160,37 +160,42 @@
 
 			<!-- -----------FILTRADO DE PUBLICACIONES---------- -->
 
-			<section class="fondoFiltrado container-md" id="tablaFitness">
+			<section class="fondoFiltrado container-md">
+				<h2 class="filtradoTitulo">Fitness - Publicaciones Destacadas</h2>
 				<form class="filtrado">
-					<H2 class="filtradoTitulo">Fitness - Publicaciones Destacadas</H2>
-					<button class="button">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>Mas recientes
-					</button>
-					<button class="button">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>Mas populares
-					</button>
-								
-					<label for="antiguedad">Desde:</label>
-					<select name="fecha" id="antiguedad">
-						<option value="h">Hoy</option>
-						<option value="a">Ayer</option>
-						<option value="us">Ultima Semana</option>
-						<option value="um">Ultimo Mes</option>
-						<option value="ua">Ultimo año</option>
-						<option value="s">Siempre</option>
-					</select>
-					<label for="orden">Ordenado por:</label>
-					<select name="mejores" id="orden">
-						<option value="f">Fecha</option>
-						<option value="p">Puntaje</option>
-						<option value="v">Vistas</option>
-					</select>					
+					<div class="filtradoSecciones">
+						<button class="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							Mas recientes</button>
+						<button class="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							Mas populares</button>
+					</div>
+					<div class="filtradoSecciones">
+						<label for="antiguedad">Desde:</label>
+						<select name="fecha" id="antiguedad">
+							<option value="h">Hoy</option>
+							<option value="a">Ayer</option>
+							<option value="us">Ultima Semana</option>
+							<option value="um">Ultimo Mes</option>
+							<option value="ua">Ultimo año</option>
+							<option value="s">Siempre</option>
+						</select>
+					</div>
+					<div class="filtradoSecciones">
+						<label for="orden">Ordenado por:</label>
+						<select name="mejores" id="orden">
+							<option value="f">Fecha</option>
+							<option value="p">Puntaje</option>
+							<option value="v">Vistas</option>
+						</select>
+					</div>				
 				</form>
 			</section>
 

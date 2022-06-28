@@ -96,21 +96,54 @@
     }
 }
 
-/* ---------- RESPONSIVE TAMAÑO CELULAR ---------- */
+/* ---------- RESPONSIVE TAMAÑO CELULAR (CELULARES PANTALLA MUY CHICA HORIZONTAL)---------- */
+
+@media screen and (max-height: 360px) and (orientation: landscape) {
+   
+    /* -----ESTILOS GLOBALES----- */   
+    
+    h1 {font-size:2.8rem ;}
+
+    h2 {font-size: 2.16rem;}
+
+    h3 {font-size: 1.6rem;}
+
+    .button, select {
+        font-size: 1rem;
+    }
+
+   
+    /* -----DESTACADOS----- */ 
+
+    .destacadoContenido{
+        grid-template-rows: 1fr;
+    }
+    .cuadroDisplay {
+    display: none;
+   }
+
+   /* ==========CAROUSEL========== */
+
+   .carouselImg {
+        height: 80vh;
+   }
+}
+
+/* ---------- RESPONSIVE TAMAÑO CELULAR (CELULARES PANTALLA NORMAL)---------- */
 
 @media screen and (max-width: 576px) {
 
-    /* -----ULTIMAS DESTACADO----- */
-
-    .enlaceResponsive{
-        display: inline;
-        padding: 0.1rem;
-        border: solid 2px $principal;
-        background-color: $pastel;
-        border-radius: 4px;
-        color: $suave;
-        text-shadow: $resaltadoNegro;
+    .button{
+        font-size: 1rem;
+        padding: 0.1rem 0.2rem;
     }
+
+    select {
+        font-size: 1rem;
+        border: none;
+    }
+
+   /* -----ULTIMAS DESTACADO----- */
 
     .gridContainer, .gridContainerDer{
         display: block;
@@ -151,7 +184,10 @@
     }
 
     /* -----PUBLICACIONES----- */
-
+    .filtrado {
+        flex-direction: column;
+    }
+    
     .publicacionesVideo{
         display: flex;
         width: 90%;
@@ -161,6 +197,46 @@
     /* --------FORM-------- */
 
     fieldset input, .nacionSexo, textarea {
-        width: 400px;
+        width: 300px;
     }
+    .nacionSexo{
+        display: block;
+    }
+}
+
+/* ---------- RESPONSIVE TAMAÑO CELULAR (CELULARES PANTALLA MUY CHICA VETICAL)---------- */
+
+@media screen and (max-width: 370px) and (orientation: portrait) {
+
+    h1 {font-size:2rem ;}
+
+    h2 {font-size: 1.75rem;}
+
+    h3 {font-size: 1.4rem;}
+
+    /*-----TITULO-----*/
+
+    .titulo {
+        background-image: url("../img/fondosYlogos/tituloVertical.png");
+        height: 90vh;
+        button {
+            font-size: 2rem;
+            padding: 0.5rem 1rem;
+            border: solid 3px $principal;
+            border-radius: 10px;
+        }
+    }
+
+    /*-----CAROUSEL-----*/
+
+    .carouselImg {
+        height: 40vh;
+    }
+
+    /*------FILTRADO-----*/
+    .filtrado {
+        flex-direction: column;
+    }
+
+
 }

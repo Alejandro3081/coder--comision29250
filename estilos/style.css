@@ -188,6 +188,9 @@ p {
   color: rgba(251, 245, 243, 0.8431372549);
   background-color: #026ccf;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
 }
 
 .estrellas {
@@ -195,14 +198,11 @@ p {
 }
 
 /* ----------SECCION DE DESTACADOS CONFIGURACIONES GLOBALES---------- */
-.enlaceResponsive {
-  display: none;
-}
-
 .tituloSeccion {
   text-align: center;
   color: rgba(251, 245, 243, 0.8431372549);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background-color: #138DFF;
 }
 
 .gridContainer {
@@ -289,15 +289,19 @@ p {
 /* ---------- FILTRADO DE PUBLICACIONES ---------- */
 .fondoFiltrado {
   margin: 1rem auto 0.5rem;
-}
-
-.filtrado {
   background-image: url("../img/fondosYlogos/mejoresUltimos.png");
   border: solid 4px #004A8F;
   border-radius: 4px;
   padding: 1rem;
 }
-.filtrado label {
+
+.filtrado {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.filtradoSecciones label {
   font-size: 1.25rem;
   color: rgba(251, 245, 243, 0.8431372549);
 }
@@ -379,7 +383,7 @@ fieldset input {
   display: inline-flex;
   width: 500px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .nacionSexo input {
   margin: 0;
@@ -491,19 +495,52 @@ textarea {
        object-fit: contain;
   }
 }
-/* ---------- RESPONSIVE TAMAÑO CELULAR ---------- */
-@media screen and (max-width: 576px) {
-  /* -----ULTIMAS DESTACADO----- */
-  .enlaceResponsive {
-    display: inline;
-    padding: 0.1rem;
-    border: solid 2px #004A8F;
-    background-color: #96CCFF;
-    border-radius: 4px;
-    color: #026ccf;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+/* ---------- RESPONSIVE TAMAÑO CELULAR (CELULARES PANTALLA MUY CHICA HORIZONTAL)---------- */
+@media screen and (max-height: 360px) and (orientation: landscape) {
+  /* -----ESTILOS GLOBALES----- */
+  h1 {
+    font-size: 2.8rem;
   }
 
+  h2 {
+    font-size: 2.16rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  .button, select {
+    font-size: 1rem;
+  }
+
+  /* -----DESTACADOS----- */
+  .destacadoContenido {
+    grid-template-rows: 1fr;
+  }
+
+  .cuadroDisplay {
+    display: none;
+  }
+
+  /* ==========CAROUSEL========== */
+  .carouselImg {
+    height: 80vh;
+  }
+}
+/* ---------- RESPONSIVE TAMAÑO CELULAR (CELULARES PANTALLA NORMAL)---------- */
+@media screen and (max-width: 576px) {
+  .button {
+    font-size: 1rem;
+    padding: 0.1rem 0.2rem;
+  }
+
+  select {
+    font-size: 1rem;
+    border: none;
+  }
+
+  /* -----ULTIMAS DESTACADO----- */
   .gridContainer, .gridContainerDer {
     display: block;
     margin: 1rem;
@@ -538,6 +575,10 @@ textarea {
   }
 
   /* -----PUBLICACIONES----- */
+  .filtrado {
+    flex-direction: column;
+  }
+
   .publicacionesVideo {
     display: flex;
     width: 90%;
@@ -546,6 +587,46 @@ textarea {
 
   /* --------FORM-------- */
   fieldset input, .nacionSexo, textarea {
-    width: 400px;
+    width: 300px;
+  }
+
+  .nacionSexo {
+    display: block;
+  }
+}
+/* ---------- RESPONSIVE TAMAÑO CELULAR (CELULARES PANTALLA MUY CHICA VETICAL)---------- */
+@media screen and (max-width: 370px) and (orientation: portrait) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  /*-----TITULO-----*/
+  .titulo {
+    background-image: url("../img/fondosYlogos/tituloVertical.png");
+    height: 90vh;
+  }
+  .titulo button {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border: solid 3px #004A8F;
+    border-radius: 10px;
+  }
+
+  /*-----CAROUSEL-----*/
+  .carouselImg {
+    height: 40vh;
+  }
+
+  /*------FILTRADO-----*/
+  .filtrado {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
