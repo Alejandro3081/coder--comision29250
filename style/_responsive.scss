@@ -114,7 +114,9 @@
 
    
     /* -----DESTACADOS----- */ 
-
+    .fondoUltimosDestacados {
+        display: none;
+    }
     .destacadoContenido{
         grid-template-rows: 1fr;
     }
@@ -204,9 +206,9 @@
     }
 }
 
-/* ---------- RESPONSIVE TAMAÑO CELULAR (CELULARES PANTALLA MUY CHICA VETICAL)---------- */
+/* ---------- RESPONSIVE TAMAÑO CELULAR (CELULARES PANTALLA MUY CHICA VERTICAL)---------- */
 
-@media screen and (max-width: 390px) and (orientation: portrait) {
+@media screen and (max-width: 390px){
 
     h1 {font-size:2rem ;}
 
