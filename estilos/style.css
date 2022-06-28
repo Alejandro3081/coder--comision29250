@@ -309,7 +309,6 @@ p {
 .filtradoTitulo {
   text-align: center;
   color: rgba(251, 245, 243, 0.8431372549);
-  font-size: 2rem;
   text-shadow: -2px 0 #004A8F, 0 2px #004A8F, 2px 0 #004A8F, 0 -2px #004A8F;
   text-transform: uppercase;
 }
@@ -515,6 +514,10 @@ textarea {
   }
 
   /* -----DESTACADOS----- */
+  .fondoUltimosDestacados {
+    display: none;
+  }
+
   .destacadoContenido {
     grid-template-rows: 1fr;
   }
@@ -594,8 +597,8 @@ textarea {
     display: block;
   }
 }
-/* ---------- RESPONSIVE TAMAÑO CELULAR (CELULARES PANTALLA MUY CHICA VETICAL)---------- */
-@media screen and (max-width: 370px) and (orientation: portrait) {
+/* ---------- RESPONSIVE TAMAÑO CELULAR (CELULARES PANTALLA MUY CHICA VERTICAL)---------- */
+@media screen and (max-width: 390px) {
   h1 {
     font-size: 2rem;
   }
