@@ -20,7 +20,7 @@
 
 			<!--------BARRA DE NAVEGACION-------->
 
-			<nav class="navegador navbar navbar-expand-md navbar-dark">
+			<nav class="navegador navbar navbar-expand-md navbar-dark" id="up">
 				<div class="container-md">
 				  	<a class="navItems navbar-brand" href="index.html"><img src="./img/fondosYlogos/LogoST.gif" alt="logo salud total"></a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBars" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,6 +53,7 @@
 				<h2>La primera riqueza es la salud</h2>
 				<form action="./secciones/registrarse.html">
 					<button class="button">
+						<!-- Los siguientes span estan vacios a propósito ya que los utilizó para realizar una animación de bordes cuando le pasamos el puntero sobre el botón, esto se repite en otros html, cada span representa un lado del borde por eso coloque 4 -->
 						<span></span>
 						<span></span>
 						<span></span>
@@ -62,6 +63,17 @@
 				</form>
 			</div>
 		</header>
+		
+			<!-- ----------ICONOS DE DESPLAZAMIENTO----------- -->
+
+			<div class="flechas" duraction="5000">
+				<a href="#up">
+					<i class="fa-solid fa-circle-chevron-up"></i>
+				</a>
+				<a href="#down">
+					<i class="fa-solid fa-circle-chevron-down"></i>
+				</a>
+			</div>	
 
 		<!--------SECCIONES PRINCIPALES-------->
 
@@ -176,26 +188,26 @@
 					<div class="destacadoContenido">
 						<div class="cuadro">
 							<a href="./secciones/nutricion.html#publicacion-1nutricion">
-								<img src="./img/jugoDeNaranja.png" alt="imagen de niño con cereal">
-								<p>Jugo de Naranja, Divertida Animación</p>
+								<img src="./img/jugoDeNaranja.png" alt="Naranjas, exprimidor y vasos con jugo de naranja.">
+								<h4>Jugo de Naranja, Divertida Animación</h4>
 							</a>
 						</div>
 						<div class="cuadro">
 							<a href="./secciones/nutricion.html#publicacion-2nutricion">
-								<img src="./img/plato.png" alt="imagen de platos con diferentes alimentos">
-								<p>Método del Plato Saludable</p>							
+								<img src="./img/plato.png" alt="Plato con diferentes alimentos nutritivos.">
+								<h4>Método del Plato Saludable</h4>							
 							</a>
 						</div>
 						<div class="cuadro cuadroDisplay">
 							<a href="./secciones/nutricion.html#publicacion-3nutricion">
-								<img src="./img/menuSemanal.jpg" alt="cinta de medir">
-								<p>Menu Semanal Para Adelgazar...</p>
+								<img src="./img/menuSemanal.jpg" alt="Cinta de medir.">
+								<h4>Menu Semanal Para Adelgazar...</h4>
 							</a>
 						</div>
 						<div class="cuadro cuadroDisplay">
 							<a href="./secciones/nutricion.html#publicacion-4nutricion">
-								<img src="./img/ideasParaElDesayuno.jpg" alt="nena comiendo">
-								<p>Buenas Ideas Para el Desayuno...</p>
+								<img src="./img/ideasParaElDesayuno.jpg" alt="Niña comiendo.">
+								<h4>Buenas Ideas Para el Desayuno...</h4>
 							</a>
 						</div>
 					</div>
@@ -210,26 +222,26 @@
 					<div class="destacadoContenido">
 						<div class="cuadro">
 							<a href="./secciones/fitness.html#publicacion-1fitness">
-								<img src="./img/caminar.jpeg" alt="mujer caminando">
-								<p>¿Es más saludable caminar fuera o en cinta?</p>
+								<img src="./img/caminar.jpeg" alt="Mujer caminando.">
+								<h4>¿Es más saludable caminar fuera o en cinta?</h4>
 							</a>
 						</div>
 						<div class="cuadro">
 							<a href="./secciones/fitness.html#publicacion-2fitness">
-								<img src="./img/pec-deck.jpg" alt="mujer en maquina de pec-deck">
-								<p>Mariposa Para Entrenar Pectorales</p>
+								<img src="./img/pec-deck.jpg" alt="Mujer en máquina mariposa para ejercitar pectorales.">
+								<h4>Mariposa Para Entrenar Pectorales</h4>
 							</a>
 						</div>
 						<div class="cuadro cuadroDisplay">
 							<a href="./secciones/fitness.html#publicacion-3fitness">
-								<img src="./img/estiramiento.png" alt="hombre realizando ejercicion de estiramiento">
-								<p>Rutina de Ejercicios (Estiramiento)</p>
+								<img src="./img/estiramiento.png" alt="Hombre realizando ejercicios de estiramiento.">
+								<h4>Rutina de Ejercicios (Estiramiento)</h4>
 							</a>
 						</div>
 						<div class="cuadro cuadroDisplay">
 							<a href="./secciones/fitness.html#publicacion-5fitness">
-								<img src="./img/beneficioPilates.jpg" alt="hombre en cama de pilates">
-								<p>Beneficios de Hacer Pilates</p>
+								<img src="./img/beneficioPilates.jpg" alt="Hombre sobre cama de pilates, ejercitandose.">
+								<h4>Beneficios de Hacer Pilates</h4>
 							</a>
 						</div>
 					</div>
@@ -243,29 +255,29 @@
 					<div class="destacadoContenido">
 						<div class="cuadro">
 							<a href="./secciones/educamente.html#publicacion-1educamente">
-								<img src="./img/leer.jpg" alt="chico leyendo">
-								<p>3 Ejercicios Para Entrenar tu Mente</p>
+								<img src="./img/leer.jpg" alt="Niño leyendo.">
+								<h4>3 Ejercicios Para Entrenar tu Mente</h4>
 							</a>
 						</div>
 
 						<div class="cuadro">
 							<a href="./secciones/educamente.html#publicacion-2educamente">
-								<img src="./img/velocidadMental.png" alt="cerebro electrico girando">
-								<p>4 Ejercicios Sencillos Para Evaluar la Velocidad de tu Cerebro</p>
+								<img src="./img/velocidadMental.png" alt="Persona tratando de resolver un cubo rubik 4 por 4.">
+								<h4>4 Ejercicios Sencillos Para Evaluar la Velocidad de tu Cerebro</h4>
 							</a>
 						</div>
 
 						<div class="cuadro cuadroDisplay">
 							<a href="./secciones/educamente.html#publicacion-3educamente">
-								<img src="./img/ejerciciosParaMayores.jpg" alt="abuelos jugando ajedrez">
-								<p>Ejercicios de estimulación cognitiva para personas mayores</p>
+								<img src="./img/ejerciciosParaMayores.jpg" alt="Abuelos jugando ajedrez.">
+								<h4>Ejercicios de estimulación cognitiva para personas mayores</h4>
 							</a>
 						</div>
 
 						<div class="cuadro cuadroDisplay">
 							<a href="./secciones/educamente.html#publicacion-4educamente">
-								<img src="./img/gimnasioCerebral.png" alt="joven estirando los dedos">
-								<p>7 Ejercicios de gimnasia cerebral</p>
+								<img src="./img/gimnasioCerebral.png" alt="Muñeco con forma de cerebro haciendo ejercicios.">
+								<h4>7 Ejercicios de gimnasia cerebral</h4>
 							</a>
 						</div>
 					</div>
@@ -275,19 +287,19 @@
 		</main>
 
 <!--------FOOTER-------->
-		<div class="fondoFooter">  
+		<div class="fondoFooter" id="down">  
 			<footer class="container-md d-flex flex-wrap justify-content-between align-items-center py-1 py-md-3">
 				<ul class="nav justify-content-center">
-				<li class="nav-item"><a href="index.html" class="nav-link px-2">Inicio</a></li>
-				<li class="nav-item"><a href="./secciones/nutricion.html" class="nav-link">Nutrición</a></li>
-				<li class="nav-item"><a href="./secciones/fitness.html" class="nav-link">Fitness</a></li>
-				<li class="nav-item"><a href="./secciones/educamente.html" class="nav-link">Educamente</a></li>
-				<li class="nav-item"><a href="./secciones/registrarse.html" class="nav-link">Registrarse</a></li>
+					<li class="nav-item"><a href="index.html" class="nav-link px-2">Inicio</a></li>
+					<li class="nav-item"><a href="./secciones/nutricion.html" class="nav-link">Nutrición</a></li>
+					<li class="nav-item"><a href="./secciones/fitness.html" class="nav-link">Fitness</a></li>
+					<li class="nav-item"><a href="./secciones/educamente.html" class="nav-link">Educamente</a></li>
+					<li class="nav-item"><a href="./secciones/registrarse.html" class="nav-link">Registrarse</a></li>
 				</ul>
 				<ul class="nav justify-content-center list-unstyled d-flex">
-				<i class="ms-3 text-muted fs-3 fa-brands fa-instagram"></i>
-				<i class="ms-3 text-muted fs-3 fa-brands fa-facebook-square"></i>
-				<i class="ms-3 text-muted fs-3 fa-brands fa-twitter"></i>
+					<i class="ms-3 text-muted fs-3 fa-brands fa-instagram"></i>
+					<i class="ms-3 text-muted fs-3 fa-brands fa-facebook-square"></i>
+					<i class="ms-3 text-muted fs-3 fa-brands fa-twitter"></i>
 				</ul>
 				<p class="text-muted my-auto">&copy; 2022 Página creada por Jorge A. Caballero</p>
 			</footer>

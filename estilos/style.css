@@ -102,7 +102,7 @@ h3 {
   font-size: 2rem;
 }
 
-p {
+p, h4 {
   font-size: 1.25rem;
 }
 
@@ -117,6 +117,25 @@ p {
 }
 .navItems:hover {
   transform: scale(1.2);
+}
+
+/*----------ICONOS DE DESPLAZAMINETO-----------*/
+.flechas {
+  position: fixed;
+  bottom: 3rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.flechas a {
+  opacity: 0.5;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.flechas a:hover {
+  color: #96CCFF;
+  opacity: 1;
 }
 
 /* ---------- FOOTER ---------- */
@@ -236,7 +255,7 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.cuadro a p {
+.cuadro a h4 {
   line-height: normal;
 }
 
@@ -407,7 +426,6 @@ textarea {
   .gridContainer {
     grid-template-columns: 80px auto 25%;
   }
-
   .gridContainerDer {
     grid-template-columns: 25% auto 80px;
   }
@@ -416,7 +434,6 @@ textarea {
   .gridContainer {
     grid-template-columns: 50px auto 15%;
   }
-
   .gridContainerDer {
     grid-template-columns: 15% auto 50px;
   }
@@ -424,69 +441,55 @@ textarea {
 /* --------------RESPONSIVE TAMAÑO TABLETA------------- */
 @media screen and (max-width: 768px) {
   /* -----ESTILOS GLOBALES----- */
-  li, p {
+  li, p, h4 {
     font-size: 1rem;
   }
-
   h1 {
     font-size: 2.8rem;
   }
-
   h2 {
     font-size: 2.16rem;
   }
-
   h3 {
     font-size: 1.6rem;
   }
-
   .button {
     padding: 0.4rem;
     font-size: 1.2rem;
   }
-
   /* ----NAVEGADOR----- */
   .navbar-brand:hover, .nav-item:hover {
     transform: none;
   }
-
   /* -----TITULO----- */
   .titulo {
     height: 70vh;
   }
-
   /* -----ULTIMAS DESTACADO----- */
   .fondoUltimosDestacados {
     display: none;
   }
-
   .gridContainer, .gridContainerDer {
     grid-template-columns: 10% auto 10%;
     align-items: center;
   }
-
   .destacadoContenido {
     grid-template-rows: 1fr;
   }
-
   .fondoNutricion, .fondoFitness, .fondoEducamente {
     height: 70vh;
   }
-
   .cuadroDisplay {
     display: none;
   }
-
   /* ==========CAROUSEL========== */
   .carouselImg {
     height: 25rem;
   }
-
   /* -----FILTRADO PUBLICACIONES----- */
   .filtradoTitulo {
     font-size: 1.6rem;
   }
-
   /* -----PUBLICACIONES----- */
   .publicacionesImg, .publicacionesVideo {
     width: 95%;
@@ -500,32 +503,25 @@ textarea {
   h1 {
     font-size: 2.8rem;
   }
-
   h2 {
     font-size: 2.16rem;
   }
-
   h3 {
     font-size: 1.6rem;
   }
-
   .button, select {
     font-size: 1rem;
   }
-
   /* -----DESTACADOS----- */
   .fondoUltimosDestacados {
     display: none;
   }
-
   .destacadoContenido {
     grid-template-rows: 1fr;
   }
-
   .cuadroDisplay {
     display: none;
   }
-
   /* ==========CAROUSEL========== */
   .carouselImg {
     height: 80vh;
@@ -537,62 +533,51 @@ textarea {
     font-size: 1rem;
     padding: 0.1rem 0.2rem;
   }
-
   select {
     font-size: 1rem;
     border: none;
   }
-
   /* -----ULTIMAS DESTACADO----- */
   .gridContainer, .gridContainerDer {
     display: block;
     margin: 1rem;
   }
-
   .destacadoContenido {
     max-height: 95%;
     grid-template-columns: 1fr;
   }
-
   .tituloSeccion {
     border: solid 3px #004A8F;
     border-radius: 5px;
   }
-
-  .cuadro a p {
+  .cuadro a h4 {
     font-size: 1.5rem;
     padding: 0.5rem;
   }
   .cuadro a img {
     height: auto;
   }
-
   .fondoNutricion, .fondoFitness, .fondoEducamente {
     height: 100%;
     background: none;
   }
-
   /* ==========CAROUSEL========== */
   .carouselImg {
     height: 20rem;
   }
-
   /* -----PUBLICACIONES----- */
   .filtrado {
     flex-direction: column;
   }
-
   .publicacionesVideo {
     display: flex;
     width: 90%;
     height: auto;
   }
-
   /* --------FORM-------- */
   fieldset input, .nacionSexo, textarea {
     width: 300px;
   }
-
   .nacionSexo {
     display: block;
   }
@@ -602,15 +587,12 @@ textarea {
   h1 {
     font-size: 2rem;
   }
-
   h2 {
     font-size: 1.75rem;
   }
-
   h3 {
     font-size: 1.4rem;
   }
-
   /*-----TITULO-----*/
   .titulo {
     background-image: url("../img/fondosYlogos/tituloVertical.png");
@@ -622,12 +604,10 @@ textarea {
     border: solid 3px #004A8F;
     border-radius: 10px;
   }
-
   /*-----CAROUSEL-----*/
   .carouselImg {
     height: 40vh;
   }
-
   /*------FILTRADO-----*/
   .filtrado {
     flex-direction: column;
