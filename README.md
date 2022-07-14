@@ -1,6 +1,6 @@
 # Proyecto Comunidad Salud Total🥦🏋️🧠
 - ## Autor🧔🏻:
-Mi nombre es Jorge Alejandro Caballero, tengo 34 años y soy de la ciudad de Morón que queda en Buenos Aires, Argentina. Soy estudiante de la carrera de **Desarrollo Full Stack** en la academia virtual de **[CODERHOUSE](https://www.coderhouse.com/ "CODERHOUSE")**. Actualmente estoy finalizando el curso de **Desarrollo Web**, cursado en la comisión 29.250 dictado por la profesora **[Luciana Garro](https://www.linkedin.com/in/luciana-garro/)** y bajo la tutoría de **[Verónica Bravo](https://www.linkedin.com/in/veronica-bravo-rrhh-dw/)**.
+Mi nombre es Jorge Alejandro Caballero, tengo 34 años y soy de la ciudad de Morón que queda en Buenos Aires, Argentina. Soy estudiante de la carrera de **Desarrollo Full Stack** en la academia virtual de **<a href="https://www.coderhouse.com/" target="_blank">CODERHOUSE</a>**. Actualmente estoy finalizando el curso de **Desarrollo Web**, cursado en la comisión 29.250 dictado por la profesora **<a href="https://www.linkedin.com/in/luciana-garro/" target="_blank">Luciana Garro</a>** y bajo la tutoría de **<a href="https://www.linkedin.com/in/veronica-bravo-rrhh-dw/" target="_blank">Verónica Bravo</a>**.
 
 - ## Descripción🧾:
 El sitio es un comunidad en el cual los usuarios pueden ingresar para buscar o subir información sobre **nutrición**, **fitness** y sobre métodos de ejercitación para mejorar la capacidad cognitiva y la memoría que he bautizado como **educamente**. El proyecto está desarrollado para que sea visible en varios dispositivos, tanto en computadoras de escritorio, tabletas y celulares inteligentes📱💻.
@@ -26,4 +26,4 @@ En esta última sección me gustaría compartirles unas pocas imágenes para que
 
 ------------
 ### Me despido con un saludo enorme 🙌 gracias por haber llegado hasta aquí 🥰 🙋‍♂️. Les dejo el enlace para los que quieran visitar el sitio.
-### [Comunidad Salud Total📌.](https://comunidad-saludtotal.netlify.app/#up "Comunidad Salud Total.")
+### **<a href="https://comunidad-saludtotal.netlify.app" target="_blank">Comunidad Salud Total📌.</a>**
